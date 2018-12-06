@@ -1,0 +1,74 @@
+$sandy-brown: #c3a165;
+$white: #ffffff;
+$black: #000000;
+
+.navbar {
+    background: $white;
+    // -o-transition: all .6s;
+    // -moz-transition: all .6s;
+    // -webkit-transition: all .6s;
+    // -ms-transition: all .6s;
+    // transition: all .6s;
+    backface-visibility: hidden;
+    box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+}
+ 
+.navbar.navbar-no-bg {
+    background: #444;
+    background: transparent;
+    box-shadow: none;
+}
+ 
+.navbar-dark .navbar-nav {
+    font-size: 14px;
+    color: $black;
+    font-weight: bold;
+}
+ 
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    color: $black;
+    border: 0;
+}
+
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+    color: $sandy-brown;
+}
+ 
+.navbar-dark .navbar-nav .nav-link:hover {
+    // color: inherit;
+}
+ 
+.navbar-dark .navbar-nav .nav-link:active {
+    color: $sandy-brown;
+    outline: 0;
+}
+ 
+.navbar-expand-md .navbar-nav .nav-link {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+ 
+.navbar-brandName {
+    justify-content: center;
+    display: flex;
+    .firstname, .lastname{
+        font-weight: bold;
+        // font-size: 36px;
+    }
+    .lastname{
+        color: $sandy-brown;
+    }
+}
+
+.mat-button, .mat-flat-button, .mat-icon-button, .mat-stroked-button{
+    border-radius: 0px !important;
+}
+
+.navbar-toggler i{
+    color: $black;
+}
+.navbar-collapse{
+    background-attachment: fixed;
+}
+

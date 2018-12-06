@@ -1,0 +1,16 @@
+@import '../../sass/mixins';
+
+
+.about-us-box-img{
+    img{
+        height: 350px;
+        width: 290px;
+        border: 3px solid $sandy-brown;
+    }
+}
+.about-us-box-text{
+    .sub-header{
+        font-family: 'Abril Fatface', cursive;
+        color: $sandy-brown;
+    }
+}

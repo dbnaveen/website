@@ -1,0 +1,56 @@
+@import "../../sass/mixins";
+
+
+.work-widgets{
+    .work-kpi{
+        height: 300px;
+        padding: 0px 25px;
+        .mat-card{
+            padding: 0px 0px 10px 0px;
+        }
+        .header{
+            height: 75px;
+        }
+        .body{
+            height: 200px;
+            padding: 32px 20px 0px 40px;
+            margin-top: 10px;
+            overflow: hidden;
+        }
+        .mat-card{
+            box-shadow: inset 0 1px 2px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12) !important;
+        }
+        .icon{
+            height: 90px;
+            position: absolute;
+            width: 90px;
+            top: 25px;
+            border-radius: 100%;
+            left: 15%;
+            font-size: 25px;
+            color: $very-light-purple;
+        }
+        .iot{
+            .header { border-bottom: 2px solid $dark-grey-blue; }
+            .icon{ background-color: $dark-grey-blue; }            
+        }
+        .amp{
+            .header { border-bottom: 2px solid $ugly-blue; }
+            .icon{ background-color: $ugly-blue; }
+        }
+        .supply-chain{
+            .header { border-bottom: 2px solid $dark-aquamarine; }
+            .icon{ background-color: $dark-aquamarine; }
+        }
+        .solar-watch{
+            .header { border-bottom: 2px solid $watermelon; }
+            .icon{ background-color: $watermelon; }
+        }
+        .asset-health{
+            .header { border-bottom: 2px solid $slate; }
+            .icon{ background-color: $slate; }
+        }
+    }
+}
+
+

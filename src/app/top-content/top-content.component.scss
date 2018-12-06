@@ -1,0 +1,40 @@
+@import '../../sass/mixins';
+
+.top-content .text {
+    color: $warm-grey;    
+}
+.top-content .text h1 {
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Kameron', serif;
+    .brown{
+        color: $sandy-brown;
+    }
+    .name{
+        color: $black;
+    }
+}
+.download-cv{
+    border: 1px solid $sandy-brown;
+    padding: 0px 9px 0px 0px;
+    border-radius: 30px;
+    color: $sandy-brown;
+    font-size: $f-14;
+    height: 35px;
+    i{
+        color: $white;
+        background: $sandy-brown;
+        padding: 10px;
+        border-radius: 30px;
+        margin-right: 5px;
+        height: 33px;
+    }
+}
+.download-cv:hover{
+    background-color: $sandy-brown;
+    color: $white;
+    i{
+        background: $white;
+        color: $sandy-brown;
+    }
+}
