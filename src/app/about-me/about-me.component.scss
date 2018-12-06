@@ -1,6 +1,8 @@
 @import '../../sass/mixins';
 
-
+.section-container-gray-bg{
+    background: $white;
+}
 .about-us-box-img{
     img{
         height: 350px;
@@ -9,8 +11,25 @@
     }
 }
 .about-us-box-text{
+    color: $dark;
     .sub-header{
-        font-family: 'Abril Fatface', cursive;
         color: $sandy-brown;
+    }
+    .header{
+        color: $sandy-brown;
+        font-family: 'Abril Fatface', cursive;
+    }
+    .address{
+        .key{
+            color: $black;
+            font-size: $f-14;
+        }
+        .value{
+            color: $warm-grey;
+            font-size: $f-14;
+        }
+        .fa-phone{
+            transform: rotate(90deg);
+        }
     }
 }

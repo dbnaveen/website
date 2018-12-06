@@ -11,6 +11,7 @@ import { TopMenuComponent } from './top-menu/top-menu.component';
 import { TopContentComponent } from './top-content/top-content.component';
 import { MyWorksComponent } from './my-works/my-works.component';
 import { AboutMeComponent } from './about-me/about-me.component';
+import { SkillsComponent } from './skills/skills.component';
 
 const appRoutes: Routes = [
   { path: 'dashboard', component:  DashboardComponent },
@@ -25,7 +26,8 @@ const appRoutes: Routes = [
     TopMenuComponent,
     TopContentComponent,
     MyWorksComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,
