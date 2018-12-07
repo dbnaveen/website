@@ -1,0 +1,48 @@
+@import '../../sass/mixins';
+
+.skills-section{
+    // .mat-tabs-centered-wrapper {
+    //     display: flex;
+    //     justify-content: center;
+    //     margin: auto;
+    //     md-tabs[md-stretch-tabs] {
+    //         max-width: 50% !important; /* or any */
+    //     }
+    // }
+    .mat-tab-header, .mat-tab-nav-bar{
+        border-bottom: none !important;
+    }
+    .mat-tab-body-content{
+        overflow: hidden;
+    }
+    .mat-tab-body-wrapper{
+        // position: absolute;
+        // width: 100%;
+        // left: 1px;
+        // top: 100px;
+        // overflow-x: hidden;
+    }
+    .developer-skills{
+        .key{
+            text-transform: uppercase;
+            color: $black;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .fa-circle{
+            color: $sandy-brown;
+        }
+        .fa-circle::after{
+            content: '';
+            position: absolute;
+            border: 0.8px solid $sandy-brown;
+            background: $sandy-brown;
+            height: 33px;
+            display: flex;
+            top: 31px;
+            left: 38px;
+        }
+    }
+
+
+}

@@ -52,6 +52,11 @@ h1, h2 {
         text-overflow: ellipsis;
     }
 }
+.text-ellipse{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
 .banner {
     margin: 75px 0px 40px;
