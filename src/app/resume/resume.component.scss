@@ -1,0 +1,35 @@
+@import "../../sass/mixins";
+
+.experience {
+    .experience-box-icon-header {
+        .experience-icon {
+        padding: 10px;
+        height: 50px;
+        width: 50px;
+        background-color: $warm-grey;
+        color: #fff;
+        border-radius: 50%;
+        font-size: 18px;
+        }
+        small{
+            font-size: 10px;
+        }
+        .active{
+            background-color: $dark-aquamarine;
+        }
+        .title{
+            color: $dark;
+            font-size: $f-16;
+            font-weight: 500;
+        }
+        .date-range{
+            color: $sandy-brown;
+            font-size: $f-14;
+            font-weight: 400;
+        }
+    }
+    .experience-box-desc {
+        color: $dark;
+        font-size: $f-14;
+    }
+}

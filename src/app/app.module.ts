@@ -12,6 +12,7 @@ import { TopContentComponent } from './top-content/top-content.component';
 import { MyWorksComponent } from './my-works/my-works.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { SkillsComponent } from './skills/skills.component';
+import { ResumeComponent } from './resume/resume.component';
 
 const appRoutes: Routes = [
   { path: 'dashboard', component:  DashboardComponent },
@@ -27,7 +28,8 @@ const appRoutes: Routes = [
     TopContentComponent,
     MyWorksComponent,
     AboutMeComponent,
-    SkillsComponent
+    SkillsComponent,
+    ResumeComponent
   ],
   imports: [
     BrowserModule,

@@ -1,36 +1,46 @@
 @import '../../sass/mixins';
 
 .skills-section{
-    // .mat-tabs-centered-wrapper {
-    //     display: flex;
-    //     justify-content: center;
-    //     margin: auto;
-    //     md-tabs[md-stretch-tabs] {
-    //         max-width: 50% !important; /* or any */
-    //     }
-    // }
     .mat-tab-header, .mat-tab-nav-bar{
         border-bottom: none !important;
     }
     .mat-tab-body-content{
         overflow: hidden;
     }
-    .mat-tab-body-wrapper{
-        // position: absolute;
-        // width: 100%;
-        // left: 1px;
-        // top: 100px;
-        // overflow-x: hidden;
+    .mat-ink-bar{
+        background-color: transparent !important;
+    }
+    .mat-tab-label-active{
+        border: 1.5px dashed $sandy-brown;
+        opacity: 1;
+    }
+    .design-skills{
+        margin-top: 50px;
+        img{
+            height: 125px;
+            width: 125px;
+            margin-bottom: 15px;
+        }
+        p{
+            font-size: $f-14;
+            color: $dark;
+            font-weight: bold;
+        }
     }
     .developer-skills{
+        margin-top: 50px;
         .key{
             text-transform: uppercase;
             color: $black;
             font-size: 16px;
             font-weight: bold;
         }
+        .value{
+            color: $warm-grey;
+        }
         .fa-circle{
             color: $sandy-brown;
+            font-size: $f-14;
         }
         .fa-circle::after{
             content: '';
@@ -39,10 +49,18 @@
             background: $sandy-brown;
             height: 33px;
             display: flex;
-            top: 31px;
-            left: 38px;
+            top: 29px;
+            left: 37.2px;
+        }
+        .design-tool::after{
+            content: '';
+            position: absolute;
+            border: 0.8px solid $white;
+            background: $white;
+            height: 33px;
+            display: flex;
+            top: 30px;
+            left: 37.2px;
         }
     }
-
-
 }
