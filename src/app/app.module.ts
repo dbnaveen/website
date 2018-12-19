@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
-
+import { NguCarouselModule } from '@ngu/carousel';
 
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -37,7 +37,8 @@ const appRoutes: Routes = [
     BrowserModule,
     RouterModule.forRoot(appRoutes, { useHash: true }),
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    NguCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]
