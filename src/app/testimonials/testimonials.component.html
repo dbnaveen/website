@@ -29,13 +29,28 @@
     <div class="row experience">
 
       <ngu-carousel #myCarousel [inputs]="carouselConfig" [dataSource]="carouselItems" class="w-100">
-        <div *nguCarouselDef="let item;" class="item">
-          <div class="tile">{{item}}</div>
+        <div *nguCarouselDef="let item;" class="item testimonials">
+          <div class="tile flex-column h-100 p-4">
+            <div class="name">
+              <span class="title"> {{item['title']}} </span>
+              <p class="sub-title">({{item['subTitle']}})</p>
+            </div>
+            <div class="img">
+              <img *ngIf="item['id'] === '1'" src="assets/img/testimonials/jojo.jpg" data-at2x="assets/img/testimonials/jojo.jpg" alt="Profile" width="100" height="100">
+              <img *ngIf="item['id'] === '2'" src="assets/img/testimonials/darshit.jpg" data-at2x="assets/img/testimonials/darshit.jpg" alt="Profile" width="100" height="100">
+            </div>
+            <div class="message">
+              <p class="m-0">
+                {{item['message']}}
+              </p>
+            </div>
+            <div class="more d-flex w-100 justify-content-end"> Read more</div>
+          </div>
         </div>
-        <button NguCarouselNext class="rightRs">></button>
-        <button NguCarouselPrev class="leftRs"><</button>
+        <button NguCarouselNext class="rightRs"><i class="fas fa-chevron-right"></i></button>
+        <button NguCarouselPrev class="leftRs"><i class="fas fa-chevron-left"></i></button>
         <ul class="myPoint" NguCarouselPoint>
-          <li *ngFor="let j of myCarousel.pointNumbers; let j = index" [class.active]="j==myCarousel.activePoint" (click)="myCarousel.moveTo(j)"></li>
+          <li *ngFor="let j of myCarousel.pointNumbers; let j = index" [class.active]="j==myCarousel.activePoint" (click)="myCarousel.moveTo(j)"> </li>
         </ul>
       </ngu-carousel>
 
