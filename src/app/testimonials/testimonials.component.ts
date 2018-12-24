@@ -35,8 +35,8 @@ export class TestimonialsComponent implements OnInit {
       id:'2',
       title:'Darshith Badiyani',
       subTitle: 'Naveen worked with Darshith in the same group',
-      message:'Naveen is one of the serious and hardworking person I have worked with at Flutura. He has great experience on the UI front'+
-      ' and is open to learn new things and pitch his own ideas for best user experience. He\'s a responsible developer willing to go the'+
+      message:'Naveen is one of the serious and hardworking person I have worked with at Flutura. He has great experience on the UI front '+
+      'and is open to learn new things and pitch his own ideas for best user experience. He\'s a responsible developer willing to go the '+
       'distance for best output.'
     }, 
   ];

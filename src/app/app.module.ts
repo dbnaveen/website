@@ -14,6 +14,8 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ResumeComponent } from './resume/resume.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
+import { InterestsComponent } from './interests/interests.component';
+import { FooterComponent } from './footer/footer.component';
 
 const appRoutes: Routes = [
   { path: 'dashboard', component:  DashboardComponent },
@@ -31,7 +33,9 @@ const appRoutes: Routes = [
     AboutMeComponent,
     SkillsComponent,
     ResumeComponent,
-    TestimonialsComponent
+    TestimonialsComponent,
+    InterestsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

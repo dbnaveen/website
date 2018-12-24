@@ -1,0 +1,29 @@
+@import '../../sass/mixins';
+
+.interests-box{
+    padding: 0em 10em;
+}
+
+.blog-box-image::before{
+    content: '';
+    position: absolute;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    bottom: 10%;
+    width: 100%;
+    text-align: center;
+    font-family: 'Kameron', serif;
+}
+.travel::before{
+    content: 'LOVE TO TRAVEL';
+}
+.music::before{
+    content: 'MUSIC';
+}
+.ride::before{
+    content: 'RIDE';
+}
+.blog-box{
+    visibility: visible !important;
+}
