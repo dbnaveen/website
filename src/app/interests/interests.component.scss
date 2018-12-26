@@ -1,9 +1,11 @@
 @import '../../sass/mixins';
 
+.blog-container{
+    padding-bottom: 40px !important;
+}
 .interests-box{
     padding: 0em 10em;
 }
-
 .blog-box-image::before{
     content: '';
     position: absolute;
