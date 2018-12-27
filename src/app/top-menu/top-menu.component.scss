@@ -1,7 +1,4 @@
-$sandy-brown: #c3a165;
-$white: #ffffff;
-$black: #000000;
-
+@import '../../sass/mixins';
 .navbar {
     background: $white;
     // -o-transition: all .6s;
@@ -19,26 +16,22 @@ $black: #000000;
     box-shadow: none;
 }
  
-.navbar-dark .navbar-nav {
-    font-size: 14px;
-    color: $black;
-    font-weight: bold;
-}
+// .navbar-dark .navbar-nav {
+//     font-size: 13px;
+//     color: $black;
+//     font-weight: 500;
+// }
  
 .navbar-dark .navbar-nav .nav-link {
     color: #fff;
-    color: $black;
+    color: $slate;
     border: 0;
+    font-size: 13px;
+    font-weight: 500;
 }
-
 .navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
     color: $sandy-brown;
 }
- 
-.navbar-dark .navbar-nav .nav-link:hover {
-    // color: inherit;
-}
- 
 .navbar-dark .navbar-nav .nav-link:active {
     color: $sandy-brown;
     outline: 0;
@@ -52,9 +45,10 @@ $black: #000000;
 .navbar-brandName {
     justify-content: center;
     display: flex;
+    font-size: 24px;
     .firstname, .lastname{
-        font-weight: bold;
-        // font-size: 36px;
+        font-weight: 500;
+        color: $slate;
     }
     .lastname{
         color: $sandy-brown;
@@ -66,7 +60,7 @@ $black: #000000;
 }
 
 .navbar-toggler i{
-    color: $black;
+    color: $slate;
 }
 .navbar-collapse{
     background-attachment: fixed;
