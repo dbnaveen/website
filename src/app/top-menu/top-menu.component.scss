@@ -1,27 +1,14 @@
 @import '../../sass/mixins';
 .navbar {
     background: $white;
-    // -o-transition: all .6s;
-    // -moz-transition: all .6s;
-    // -webkit-transition: all .6s;
-    // -ms-transition: all .6s;
-    // transition: all .6s;
     backface-visibility: hidden;
     box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
 }
- 
 .navbar.navbar-no-bg {
     background: #444;
     background: transparent;
     box-shadow: none;
 }
- 
-// .navbar-dark .navbar-nav {
-//     font-size: 13px;
-//     color: $black;
-//     font-weight: 500;
-// }
- 
 .navbar-dark .navbar-nav .nav-link {
     color: #fff;
     color: $slate;
@@ -54,11 +41,9 @@
         color: $sandy-brown;
     }
 }
-
 .mat-button, .mat-flat-button, .mat-icon-button, .mat-stroked-button{
     border-radius: 0px !important;
 }
-
 .navbar-toggler i{
     color: $slate;
 }
