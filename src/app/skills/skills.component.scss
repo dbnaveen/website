@@ -11,19 +11,22 @@
         background-color: transparent !important;
     }
     .mat-tab-label-active{
-        border: 1.5px dashed $sandy-brown;
+        border: 1px dashed $sandy-brown;
         opacity: 1;
+        color: $sandy-brown;
     }
     .design-skills{
         margin-top: 50px;
         img{
+            border: 1px solid $very-light-purple;
+            padding: 5px;
             height: 125px;
             width: 125px;
             margin-bottom: 15px;
         }
         p{
-            font-size: $f-14;
-            color: $dark;
+            font-size: $f-12;
+            color: $slate;
             font-weight: bold;
         }
     }
@@ -31,26 +34,28 @@
         margin-top: 50px;
         .key{
             text-transform: uppercase;
-            color: $black;
-            font-size: 16px;
-            font-weight: bold;
+            color: $slate;
+            font-size: 12px;
+            font-weight: 500;
         }
         .value{
             color: $warm-grey;
+            font-size: 12px;
+            font-weight: 500;
         }
         .fa-circle{
             color: $sandy-brown;
-            font-size: $f-14;
+            font-size: $f-12;
         }
         .fa-circle::after{
             content: '';
             position: absolute;
             border: 0.8px solid $sandy-brown;
             background: $sandy-brown;
-            height: 33px;
+            height: 34px;
             display: flex;
-            top: 29px;
-            left: 37.2px;
+            top: 27px;
+            left: 36.5px;
         }
         .design-tool::after{
             content: '';
@@ -62,5 +67,16 @@
             top: 30px;
             left: 37.2px;
         }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .developer-skills{
+        .key, .value{
+            font-size: 8px !important;
+        }
+    }
+    .mat-tab-label-content{
+        font-size: 10px !important;
     }
 }

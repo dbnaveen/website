@@ -11,26 +11,16 @@
         color: $black; font-weight: normal; font-size: $f-14;
     }
     .message::before{
-        content: '\f10d';
-        font-family: "FontAwesome";
+        content: "\f10d";
+        font-family: "Font Awesome\ 5 Free";
+        font-weight: 900;
         position: absolute;
         text-align: left;
         font-size: 40px;
-        color: $very-light-purple;
+        color: $pinkish-grey;
         top: 35px;
         display: flex;
     }
-    // .message::after{
-    //     content: '\f10e';
-    //     font-family: "FontAwesome";
-    //     position: absolute;
-    //     text-align: right;
-    //     font-size: 40px;
-    //     color: $very-light-purple;
-    //     top: 35px;
-    //     right: 35px;
-    //     display: flex;
-    // }
     .more{
         color: $sandy-brown; font-weight: 500; font-size: $f-12; text-decoration: underline; cursor: pointer;
     }

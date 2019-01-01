@@ -5,24 +5,38 @@
 }
 .about-us-box-img{
     img{
-        height: 350px;
-        width: 290px;
-        border: 3px solid $sandy-brown;
+        // height: 350px;
+        // width: 290px;
+        // border: 3px solid $sandy-brown;
+        filter: drop-shadow(0px 1px 1px $pinkish-grey);
+        border-radius: 0px;
     }
 }
 .about-us-box-text{
     color: $dark;
+    padding: 0px !important;
     .sub-header{
-        color: $sandy-brown;
+        color: $warm-grey;
+        font-size: $f-12;
+    }
+    p{
+        font-size: 14px;
+        color: $slate;
     }
     .header{
         color: $sandy-brown;
         font-family: 'Abril Fatface', cursive;
+        font-size: 34px;
+        margin: 0px;
+        font-weight: 500;
     }
     .address{
         .key{
-            color: $black;
+            color: $dark;
             font-size: $f-14;
+            i {
+                color: $warm-grey;
+            }
         }
         .value{
             color: $warm-grey;
@@ -30,6 +44,17 @@
         }
         .fa-phone{
             transform: rotate(90deg);
+        }
+    }
+    address a{
+        border-bottom: none;
+        p{
+            color: #0070c9 !important;
+        }
+    }
+    address a:hover{
+        .value {
+            text-decoration: underline;
         }
     }
 }

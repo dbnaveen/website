@@ -1,12 +1,15 @@
 @import "../../sass/mixins";
 
 .experience {
+    .bg-white{
+        background-color: $white;
+    }
     .experience-box-icon-header {
         .experience-icon {
         padding: 10px;
         height: 50px;
         width: 50px;
-        background-color: $warm-grey;
+        background-color: $black;
         color: #fff;
         border-radius: 50%;
         font-size: 18px;
@@ -18,14 +21,14 @@
             background-color: $dark-aquamarine;
         }
         .title{
-            color: $dark;
-            font-size: $f-16;
+            color: $black;
+            font-size: $f-14;
             font-weight: 500;
         }
         .date-range{
             color: $sandy-brown;
-            font-size: $f-14;
-            font-weight: 400;
+            font-size: $f-12;
+            font-weight: 500;
         }
     }
     .experience-box-desc {
@@ -42,7 +45,7 @@
             font-size: 18px;
         }
         .title{
-            color: $dark;
+            color: $black;
             font-size: $f-12;
             font-weight: 500;
         }
@@ -53,7 +56,7 @@
         }
         .location{
             font-size: $f-12;
-            color: $pinkish-grey;
+            color: $warm-grey;
         }
         .divider{
             padding: 0px 5px 0px 5px;
