@@ -4,7 +4,8 @@
     padding-bottom: 40px !important;
 }
 .interests-box{
-    padding: 0em 10em;
+    // padding: 0em 10em;
+    padding: 0px 20px;
 }
 .blog-box-image::before{
     content: '';
@@ -28,4 +29,11 @@
 }
 .blog-box{
     visibility: visible !important;
+}
+
+
+.image-box{
+    height: 200px;
+    margin-bottom: 10px;
+    padding: 0px !important;
 }
