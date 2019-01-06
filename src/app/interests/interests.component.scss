@@ -30,10 +30,24 @@
 .blog-box{
     visibility: visible !important;
 }
-
-
 .image-box{
-    height: 200px;
+    height: 175px;
     margin-bottom: 10px;
     padding: 0px !important;
+    position: relative;
+    img{
+        border-radius: 5px;
+    }
+    .center {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 14px;
+        font-family: 'Kameron', serif;
+        color: $white;
+        width: 100%;
+        font-weight: bold;
+        cursor: default;
+    }
 }
