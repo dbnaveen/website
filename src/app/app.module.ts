@@ -39,7 +39,7 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes, { useHash: true }),
+    RouterModule.forRoot(appRoutes, { useHash: false }),
     BrowserAnimationsModule,
     MaterialModule,
     NguCarouselModule
