@@ -5,48 +5,42 @@
     font-weight: 400;
     font-size: $f-16;
 }
-.top-content .text h1 {
-    color: #fff;
-    font-weight: 500;
-    font-size: 60px;
+.top-content .text .title {
+    color: $slate;
+    font-weight: bold;
+    font-size: 42px;
     font-family: 'Kameron', serif;
-    margin: 25px 0px;
-    .brown{
-        color: $sandy-brown;
-    }
-    .name{
-        color: $slate;
-    }
+    margin: 15px 0px;
 }
 .download-cv{
-    border: 1.5px solid $sandy-brown;
-    padding: 0px 9px 0px 0px;
+    border: 1px solid $sandy-brown;
     border-radius: 30px;
-    color: $sandy-brown;
+    color: $beige;
     font-size: $f-14;
     height: 35px;
+    padding: 0px 10px;
+    background: $sandy-brown;
     i{
-        color: $white;
-        background: $sandy-brown;
-        padding: 10px;
-        border-radius: 30px;
-        margin-right: 5px;
-        height: 33px;
+        padding-right: 10px;
     }
 }
 .download-cv:hover{
-    background-color: $sandy-brown;
-    color: $white;
-    i{
-        background: $white;
-        color: $sandy-brown;
-    }
+    background: $white;
+    color: $sandy-brown;
 }
+// .download-cv:hover{
+//     background-color: $sandy-brown;
+//     color: $white;
+//     i{
+//         background: $white;
+//         color: $sandy-brown;
+//     }
+// }
 
 @media only screen and (max-width: 600px) {
-    .top-content .text h1 {
-        font-size: 30px;
-        font-weight: 300;
+    .top-content .text .title {
+        font-size: 24px;
+        font-weight: bold;
     }
     .top-content .text {
         font-size: $f-14;
