@@ -1,13 +1,10 @@
 @import '../../sass/mixins';
 
 .section-container-gray-bg{
-    background: $white;
+    background: url('../../assets/img/backgrounds/background_crystal.png') repeat;
 }
 .about-us-box-img{
     img{
-        // height: 350px;
-        // width: 290px;
-        // border: 3px solid $sandy-brown;
         filter: drop-shadow(0px 1px 1px $pinkish-grey);
         border-radius: 0px;
     }
