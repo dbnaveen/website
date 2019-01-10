@@ -18,9 +18,9 @@ import { InterestsComponent } from './interests/interests.component';
 import { FooterComponent } from './footer/footer.component';
 
 const appRoutes: Routes = [
-  { path: 'dashboard', component:  DashboardComponent },
-  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
-  { path: '**', redirectTo: '/dashboard', pathMatch: 'full' }
+  // { path: 'dashboard', component:  DashboardComponent },
+  // { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
+  // { path: '**', redirectTo: 'dashboard', pathMatch: 'full' }
 ]
 
 @NgModule({
