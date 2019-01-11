@@ -1,11 +1,14 @@
 @import '../../sass/mixins';
 
+.copy-right{
+    color: $sandy-brown;
+}
 footer{
     background: $black !important;
     height: 100px;
 }
-.footer-left { font-size: $f-14; }
-.footer-right a { font-size: $f-18; margin: 0 9px; }
+.footer-left { font-size: $f-14; opacity: 0.7;}
+.footer-right a { font-size: $f-18; margin: 0 9px; color: $white; }
 .scroll-top {
     background-color: $sandy-brown;
     color: $white;
