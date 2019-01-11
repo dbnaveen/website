@@ -13,29 +13,30 @@
     margin: 15px 0px;
 }
 .download-cv{
-    border: 1px solid $sandy-brown;
-    border-radius: 30px;
-    color: $beige;
-    font-size: $f-14;
-    height: 35px;
-    padding: 0px 10px;
-    background: $sandy-brown;
+    border: 1px solid $sandy-brown !important;
+    border-radius: 30px !important;
+    color: $beige !important;
+    font-size: $f-14 !important;
+    // padding: 0px 10px !important;
+    background: $sandy-brown !important;
+    outline: none !important;
     i{
         padding-right: 10px;
     }
 }
 .download-cv:hover{
-    background: $white;
-    color: $sandy-brown;
+    background: $white !important;
+    color: $sandy-brown !important;
+    border: 1px solid $white !important;
 }
-// .download-cv:hover{
-//     background-color: $sandy-brown;
-//     color: $white;
-//     i{
-//         background: $white;
-//         color: $sandy-brown;
-//     }
-// }
+.mat-button-wrapper{
+    display: -webkit-box!important;
+    display: -ms-flexbox!important;
+    display: flex!important;
+    -webkit-box-align: center!important;
+    -ms-flex-align: center!important;
+    align-items: center!important;
+}
 
 @media only screen and (max-width: 600px) {
     .top-content .text .title {
