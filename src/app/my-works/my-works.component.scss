@@ -71,13 +71,15 @@
 	}
 	small{
 		font-size: 10px;
-		color: $beige;
+		color: $warm-grey;
 	}
 	.proj-title{
-		color: $dark-grey-blue;
+		color: $white;
 		font-size: 16px;
-		border-bottom: 1px solid #fff;
-    	padding-bottom: 3px;
+		font-weight: 500;
+		border-bottom: 1px solid $white;
+		padding-bottom: 3px;
+		text-transform: none;
 	}
 	.proj-short-desc{
 		font-size: 14px;
