@@ -64,9 +64,14 @@
 .text-hover{
 	.expand{
 		height: 60px;
-		i {
-			color: $white !important;
-			font-size: 16px !important;
+		.more-details{
+			color: $white;
+			border: 1px solid $white;
+			font-size: $f-12;
+		}
+		.more-details:hover{
+			color: $sandy-brown !important;
+			border: 1px solid $sandy-brown !important;
 		}
 	}
 	small{
@@ -172,7 +177,7 @@
 	/*-----------------*/
 
 	figure.effect-goliath {
-		background: $warm-grey;
+		background: $slate;
 	}
 
 	figure.effect-goliath img,
