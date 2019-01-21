@@ -4,6 +4,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 import { NguCarouselModule } from '@ngu/carousel';
+import { MatDialogModule, MatButtonModule } from '@angular/material';
+import { NgxGalleryModule } from 'ngx-gallery';
 
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -16,6 +18,7 @@ import { ResumeComponent } from './resume/resume.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { InterestsComponent } from './interests/interests.component';
 import { FooterComponent } from './footer/footer.component';
+import { DialogComponent } from './shared/dialog/dialog.component';
 
 const appRoutes: Routes = [
   // { path: 'dashboard', component:  DashboardComponent },
@@ -35,14 +38,21 @@ const appRoutes: Routes = [
     ResumeComponent,
     TestimonialsComponent,
     InterestsComponent,
-    FooterComponent
+    FooterComponent,
+    DialogComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes, { useHash: false }),
     BrowserAnimationsModule,
     MaterialModule,
-    NguCarouselModule
+    NguCarouselModule,
+    MatDialogModule,
+    MatButtonModule,
+    NgxGalleryModule
+  ],
+  entryComponents: [
+    DialogComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

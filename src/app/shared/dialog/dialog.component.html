@@ -1,0 +1,28 @@
+<!-- <h2 mat-dialog-title class="d-flex justify-content-start">Assets Insights</h2> -->
+<div mat-dialog-content class="mat-typography">
+  <mat-tab-group>
+    <mat-tab label="Overview">
+      <div class="text-left p-0 pl-3 pt-3">
+
+        An Asset Monitoring application which tracks asset movement.
+        Basically the sensor collects data from different parts of the asset like Engine, Battery etc and
+        we show the pictorial representation of the data for different reading.
+        This helps the customer/user to take right decisions and easy to understand the behaviour of the asset and
+        monitor it.
+
+        <h4 class="m-0 mt-2">Technologies Used:</h4>
+        <ul class="">
+          <li>Angular 5</li>
+          <li>Bootstrap 4</li>
+        </ul>
+      </div>
+    </mat-tab>
+    <mat-tab label="Screenshots">
+      <ngx-gallery [options]="galleryOptions" [images]="galleryImages"></ngx-gallery>
+    </mat-tab>
+  </mat-tab-group>
+</div>
+<!-- <div mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Cancel</button>
+  <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Install</button>
+</div> -->
