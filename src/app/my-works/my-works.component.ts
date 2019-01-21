@@ -18,18 +18,18 @@ export class MyWorksComponent implements OnInit {
   constructor(public dialog: MatDialog) { }
 
   openDialog() {
-    const dialogConfig = new MatDialogConfig();
+    // const dialogConfig = new MatDialogConfig();
     // const dialogRef = this.dialog.open(DialogComponent, dialogConfig);
     const dialogRef = this.dialog.open(DialogComponent, {
       height: '80%',
-      width: '70%'
+      width: '80%'
     });
-    dialogConfig.disableClose = true;
-    dialogConfig.autoFocus = true;
-    dialogConfig.data = {
-      id: 1,
-      title: 'Angular For Beginners'
-    };
+    // dialogConfig.disableClose = true;
+    // dialogConfig.autoFocus = true;
+    // dialogConfig.data = {
+    //   id: 1,
+    //   title: 'Angular For Beginners'
+    // };
     dialogRef.afterClosed().subscribe(result => {
       // console.log('The dialog was closed');
       // console.log(result)

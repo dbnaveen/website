@@ -1,5 +1,5 @@
 import { Component, OnInit, Inject, ViewEncapsulation } from '@angular/core';
-import { MAT_DIALOG_DATA } from '@angular/material';
+import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material';
 import { NgxGalleryOptions, NgxGalleryImage, NgxGalleryAnimation } from 'ngx-gallery';
 
 @Component({
@@ -13,33 +13,36 @@ export class DialogComponent implements OnInit {
   galleryOptions: NgxGalleryOptions[];
   galleryImages: NgxGalleryImage[];
 
-  constructor(@Inject(MAT_DIALOG_DATA) public data: any) {
+  closeModal(){
+    this.dialogRef.close();
+  }
+
+  constructor(@Inject(MAT_DIALOG_DATA) public data: any, public dialogRef: MatDialogRef<DialogComponent>) {
     // this.modalTitle = data.title;
   }
 
   ngOnInit() {
     this.galleryOptions = [
       {
-        width: '600px',
-        height: '400px',
-        thumbnailsColumns: 4,
+        // "previewFullscreen": false,
+        "imageArrowsAutoHide": true,
+        // "thumbnailsArrowsAutoHide": false,
+        // "preview": true,
+        // imagePercent: 60,
+        // thumbnailsPercent: 20,
+        // previewCloseOnEsc: true,
+        // previewForceFullscreen: false,
+        // width: '600px',
+        height: '343px',
+        // thumbnailsColumns: 4,
+        arrowNextIcon:'fa fa-chevron-right',
+        arrowPrevIcon:'fa fa-chevron-left',
+        closeIcon:'fa fa-times',
         imageAnimation: NgxGalleryAnimation.Slide
       },
-      // max-width 800
-      {
-        breakpoint: 800,
-        width: '100%',
-        height: '600px',
-        imagePercent: 80,
-        thumbnailsPercent: 20,
-        thumbnailsMargin: 20,
-        thumbnailMargin: 20
-      },
-      // max-width 400
-      {
-        breakpoint: 400,
-        preview: false
-      }
+      { "breakpoint": 500, "width": "300px", height: "300px", "thumbnailsColumns": 3 },
+      { breakpoint: 500, width: '100%', height: '700px' },
+      // { breakpoint: 400}
     ];
     this.galleryImages = [
       {

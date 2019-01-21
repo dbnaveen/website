@@ -1,8 +1,40 @@
 @import '../../../sass/mixins';
 
-.mat-dialog-content{
-    max-height: 100%;
+.mat-dialog-title{
+    i {
+        cursor: pointer !important;
+    }
 }
+// .mat-dialog-content{
+//     max-height: inherit !important;
+//     // max-height: 100%;
+//     // overflow: hidden;
+// }
 .mat-dialog-container{
+    // padding: 12px 0px 0px 10px;
+    padding: 0px;
     background: url('/assets/img/works/background.jpg') repeat;
+}
+.mat-dialog-content{
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    // overflow: hidden;
+}
+// .mat-tab-group, .mat-tab-body, .mat-tab-body-content, .mat-tab-body-wrapper{
+//     height: 100%;
+// }
+
+.ngx-gallery-icon .ngx-gallery-icon-content{
+    color: $sandy-brown;
+    font-size: 24px;
+}
+
+@media only screen and (max-width: 600px) {
+    .mat-dialog-container{
+        padding: 0px;
+    }
+    ngx-gallery{
+        height: 304px !important;
+    }
 }
