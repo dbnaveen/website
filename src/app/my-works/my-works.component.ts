@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation, Inject } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation, Inject, ElementRef, ViewChild } from '@angular/core';
 import { MatDialog, MatDialogConfig } from '@angular/material';
 import { DialogComponent } from '../shared/dialog/dialog.component';
 
@@ -13,48 +13,105 @@ export class MyWorksComponent implements OnInit {
 
   animal: string;
   name: string;
-
+  @ViewChild('fig') fig: ElementRef;
 
   constructor(public dialog: MatDialog) { }
 
-  openDialog() {
-    // const dialogConfig = new MatDialogConfig();
-    // const dialogRef = this.dialog.open(DialogComponent, dialogConfig);
+  openDialog(title, desc, pictures) {
     const dialogRef = this.dialog.open(DialogComponent, {
       height: '80%',
-      width: '80%'
+      width: '80%',
+      data: {
+        title: title,
+        overviewDesc: desc,
+        screenshots: pictures
+      }
     });
-    // dialogConfig.disableClose = true;
-    // dialogConfig.autoFocus = true;
-    // dialogConfig.data = {
-    //   id: 1,
-    //   title: 'Angular For Beginners'
-    // };
     dialogRef.afterClosed().subscribe(result => {
-      // console.log('The dialog was closed');
-      // console.log(result)
+      this.removeHoverEffectOnFig();
     });
   }
 
-  ngOnInit() {
+  removeHoverEffectOnFig() {
+    var figDivList = document.querySelectorAll('.effect-goliath');
+    for (var i = 0; i < figDivList.length; i++) {
+      figDivList[i].classList.remove('effect-goliath');
+      (function (x) {
+        setTimeout(function () { figDivList[x].classList.add('effect-goliath') }, 0);
+      })(i);
+    }
+  }
 
+  onClickMoreDetails(widgetName) {
+    var desc = '';
+    var title = '';
+    var screenshots = [];
+    if (widgetName === 'amp') {
+      title = 'AMP';
+      desc = 'KOGENTIX Automated Machine Learning Platform (AMP) powers the design, experimentation, development and deployment ' +
+        'enterprise-scale AI applications. <br/><br/>' +
+        'Using <b>AMP</b> you can:' +
+        '<ol>' +
+        '<li>Pull data from wide range of data-sources.</li>' +
+        '<li>Register it as a datasets.</li>' +
+        '<li>Perform data discovery to understand various relationships and variations.</li>' +
+        '<li>Wrangle your data using various transformations to enrich/evolve.</li>' +
+        '<li>Create data models out of evolved/source dataset from a wide range of algorithms families.</li>' +
+        '<li>Enter a tweaked sample dataset to analyze various scenarios using the in-built Scenario Analyzer.</li>' +
+        '<li>Deploy such enterprise-ready models or Rule Sets to meet various enterprise scenarios.</li>' +
+        '</ol>' +
+        '<b>AMP Modules:</b>' +
+        '<ul>' +
+        '<li>Administration</li>' +
+        '<li>Dataset</li> <li>Discover</li> <li>Feature</li> <li>Model</li>' +
+        '<li>Rule Engine</li>' +
+        '<li>Deploy</li>' +
+        '<li>Content Manager</li>' +
+        '<li>Registration</li>' +
+        '</ul>' +
+        '<b>Technologies Used:</b>' +
+        '<ul class="list-circle">' +
+        '<li>Angular 5</li>' +
+        '<li>Bootstrap 4</li>' +
+        '<li>Angular Material</li>' +
+        '<li>SCSS</li>'
+      '</ul>';
+      screenshots = ['AMP/rule1.png', 'AMP/rule2.png', 'AMP/new-rule-create.png', 'AMP/new-rule-options.png',
+      'AMP/preview-overview.png', 'AMP/preview-content.png', 'AMP/rule2.png', 'AMP/summary.png'];
+      this.openDialog(title, desc, screenshots);
+    }
+    if (widgetName === 'iot') {
+      title = 'Asset Insights';
+      desc = 'An Asset Monitoring application which tracks asset movement' +
+        'Basically the sensor collects data from different parts of the asset like Engine, Battery etc and' +
+        'we show the pictorial representation of the data for different reading.' +
+        'This helps the customer/user to take right decisions and easy to understand the behaviour of the asset and' +
+        'monitor it.' +
+        '<br><br>' +
+        'Using <b>Asset-Insights</b> you can:' +
+        '<ol>' +
+        '<li>Register an asset or group of assets.</li>' +
+        '<li>Create widgets for each page.</li>' +
+        '<li>Register an User/Customer.</li>' +
+        '<li>Activate/Deactivate/Delet user.</li>' +
+        '<li>Track asset movement by creating fences.</li>' +
+        '</ol>' +
+        '<b>Technologies Used:</b>' +
+        '<ul class="list-circle">' +
+        '<li>Angular 5</li>' +
+        '<li>Bootstrap 4</li>' +
+        '<li>Angular Material</li>' +
+        '<li>SCSS</li>'
+      '</ul>';
+      screenshots = ['login.png', 'dashboard.PNG', 'asset-list.png', 'sensor.png', 'health-summary-30days.png', 'geo-fence.png']
+      this.openDialog(title, desc, screenshots);
+    }
+
+  }
+
+  ngOnInit() {
   }
 
 
 }
 
-// @Component({
-//   selector: 'dialog-overview-example-dialog',
-//   templateUrl: 'dialog-overview-example-dialog.html',
-// })
-// export class DialogOverviewExampleDialog {
-
-//   constructor(
-//     public dialogRef: MatDialogRef<DialogOverviewExampleDialog>,
-//     @Inject(MAT_DIALOG_DATA) public data: DialogData) {}
-
-//   onNoClick(): void {
-//     this.dialogRef.close();
-//   }
-
-// }
