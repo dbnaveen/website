@@ -77,7 +77,7 @@ export class MyWorksComponent implements OnInit {
         '<li>SCSS</li>'
       '</ul>';
       screenshots = ['AMP/rule1.png', 'AMP/rule2.png', 'AMP/new-rule-create.png', 'AMP/new-rule-options.png',
-      'AMP/preview-overview.png', 'AMP/preview-content.png', 'AMP/rule2.png', 'AMP/summary.png'];
+        'AMP/preview-overview.png', 'AMP/preview-content.png', 'AMP/rule2.png', 'AMP/summary.png'];
       this.openDialog(title, desc, screenshots);
     }
     if (widgetName === 'iot') {
@@ -103,7 +103,9 @@ export class MyWorksComponent implements OnInit {
         '<li>Angular Material</li>' +
         '<li>SCSS</li>'
       '</ul>';
-      screenshots = ['login.png', 'dashboard.PNG', 'asset-list.png', 'sensor.png', 'health-summary-30days.png', 'geo-fence.png']
+      screenshots = ['IOT/login.png', 'IOT/dashboard.png', 'IOT/asset-list.png', 'IOT/asset-list-map.png', 'IOT/asset-details.png', 'IOT/sensor-data.png',
+        'IOT/utilization-30.png', 'IOT/health-summary-30.png', 'IOT/loc-track-last_known.png', 'IOT/loc-track-range.png', 'IOT/select-module.png',
+      'IOT/models-list.png', 'IOT/modal.png', 'IOT/geo-fence.png', 'IOT/asset-register.png', 'IOT/asset-register-manual.png', 'IOT/asset-register-upload.png']
       this.openDialog(title, desc, screenshots);
     }
 
