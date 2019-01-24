@@ -1,6 +1,6 @@
 <div class="services-container section-container" id="services">
-  <div class="w-100 p-0 m-0 ">
-    <div class="row banner">
+  <div class="w-100 p-0 m-0">
+    <div class="row banner m-0 mt-1">
       <div class="col services section-description wow fadeIn m-0 p-3 d-flex flex-column justify-content-center wow fadeInDown">
         <h4 class="m-0 f-16">what I did</h4>
         <h2 class="m-0 f-28"><strong>MY WORKS</strong></h2>
@@ -56,7 +56,7 @@
         <div class="col-md-4 mb-3 services-box wow fadeInUp work-kpi">
           <div class="grid">
             <figure class="effect-goliath">
-              <img src="/assets/img/interests/orange-pink-gradient-linear.jpg" alt="img30" />
+              <img src="/assets/img/works/orange-pink-gradient-linear.jpg" alt="img30" />
               <figcaption>
                 <div class="proj-title"> AMP </div>
                 <small>AI - Application</small>
@@ -91,7 +91,7 @@
                   Tool that allows you to manage all components and finished goods part numnbers.
                 </div>
                 <p class="expand d-flex w-100 p-3 justify-content-end align-items-center">
-                  <a href="#"> <i class="fas fa-expand"></i> </a>
+                  <a mat-stroked-button class="more-details" (click)="onClickMoreDetails('supplyChain')">Coming Soon</a>
                 </p>
               </figcaption>
             </figure>
@@ -109,7 +109,8 @@
                   ensure the system will not run out of energy.
                 </div>
                 <p class="expand d-flex w-100 p-3 justify-content-end align-items-center">
-                  <a href="#"> <i class="fas fa-expand"></i> </a>
+                  <a mat-stroked-button class="more-details" (click)="onClickMoreDetails('solarOperations')">Coming
+                    Soon</a>
                 </p>
               </figcaption>
             </figure>
@@ -127,7 +128,7 @@
                   ensure the system will not run out of energy.
                 </div>
                 <p class="expand d-flex w-100 p-3 justify-content-end align-items-center">
-                  <a href="#"> <i class="fas fa-expand"></i> </a>
+                  <a mat-stroked-button class="more-details" (click)="onClickMoreDetails('assetHealth')">Coming Soon</a>
                 </p>
               </figcaption>
             </figure>

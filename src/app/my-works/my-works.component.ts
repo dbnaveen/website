@@ -96,12 +96,17 @@ export class MyWorksComponent implements OnInit {
         '<li>Activate/Deactivate/Delet user.</li>' +
         '<li>Track asset movement by creating fences.</li>' +
         '</ol>' +
+        '<b>Modules:</b>' +
+        '<ul>' +
+        '<li>Asset Insights</li>' +
+        '<li>Administration</li>'+
+        '</ul>' +
         '<b>Technologies Used:</b>' +
         '<ul class="list-circle">' +
         '<li>Angular 5</li>' +
         '<li>Bootstrap 4</li>' +
         '<li>Angular Material</li>' +
-        '<li>SCSS</li>'
+        '<li>SCSS</li>'+
       '</ul>';
       screenshots = ['IOT/login.png', 'IOT/dashboard.png', 'IOT/asset-list.png', 'IOT/asset-list-map.png', 'IOT/asset-details.png', 'IOT/sensor-data.png',
         'IOT/utilization-30.png', 'IOT/health-summary-30.png', 'IOT/loc-track-last_known.png', 'IOT/loc-track-range.png', 'IOT/select-module.png',

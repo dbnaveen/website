@@ -21,8 +21,9 @@ export class DialogComponent implements OnInit {
   constructor(@Inject(MAT_DIALOG_DATA) public data: any, public dialogRef: MatDialogRef<DialogComponent>, public snackBar: MatSnackBar) { }
 
   openSnackBar() {
-    this.snackBar.open('Note: Screen where are developmed by myself', 'close', {
-      duration: 5000,
+    this.snackBar.open('Note: Screens where are developmed by myself', 'close', {
+      duration: 4000,
+      panelClass: ['msg-snackbar']
     });
   }
 
@@ -50,11 +51,14 @@ export class DialogComponent implements OnInit {
         // "preview": true,
         // imagePercent: 60,
         // thumbnailsPercent: 20,
-        // previewCloseOnEsc: true,
         // previewForceFullscreen: false,
         // width: '600px',
         height: '343px',
         // thumbnailsColumns: 4,
+        imageSwipe: true, previewSwipe: true,
+        thumbnailsMoveSize:4,
+        imageAutoPlay: true, imageAutoPlayPauseOnHover: true, previewAutoPlay: false, previewAutoPlayPauseOnHover: true,
+        previewCloseOnClick: true, previewCloseOnEsc: true,
         arrowNextIcon: 'fa fa-chevron-right',
         arrowPrevIcon: 'fa fa-chevron-left',
         closeIcon: 'fa fa-times',

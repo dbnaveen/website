@@ -4,11 +4,24 @@
     list-style-type: circle;
 }
 
-
 .mat-dialog-title{
-    i {
-        cursor: pointer !important;
-    }
+    background: #ddd;
+    padding: 8px 15px;
+    font-size: 16px;
+    font-weight: normal;
+    text-transform: uppercase;
+    i { cursor: pointer !important; }
+}
+.msg-snackbar{
+    background: $sandy-brown;
+    color: $white;
+    border-radius: 3px !important;
+}
+.mat-simple-snackbar-action{
+    color: $slate;
+}
+.mat-tab-group.mat-primary .mat-tab-label.cdk-program-focused:not(.mat-tab-disabled){
+    background-color: transparent !important;
 }
 // .mat-dialog-content{
 //     max-height: inherit !important;
