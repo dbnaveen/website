@@ -13,11 +13,45 @@
     img{
         border-radius: 50%;
         display: inline-block;
-        height: 170px;
-        width: 170px;
+        height: 165px;
+        width: 165px;
         opacity: 0.85;
     }
 }
+.about-us-box{
+    .img-title{
+        font-size: 26px;
+        color: $slate !important;
+    }
+    .img-desc{
+        font-size: $f-14;
+        color: $warm-grey;
+    }
+    .img-links{
+        a{
+            cursor: pointer;
+            background: rgba(195,161,101, 0.20);
+            border-radius: 100%;
+            color: $slate;
+            display: inline-block;
+            font-size: 14px;
+            height: 36px;
+            line-height: 36px;
+            position: relative;
+            text-align: center;
+            -webkit-transition: .3s;
+            transition: .3s;
+            width: 36px;
+            margin: 0 4px .5em;
+        }
+        a:hover{
+            background: $sandy-brown;
+            color: $beige;
+            box-shadow: 0 0 1px 6px rgba(195,161,101, 0.15);
+        }
+    }
+}
+
 .about-us-box-text{
     color: $dark;
     padding: 0px !important;
