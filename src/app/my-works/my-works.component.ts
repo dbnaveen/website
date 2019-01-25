@@ -71,8 +71,7 @@ export class MyWorksComponent implements OnInit {
         '</ul>' +
         '<b>Technologies Used:</b>' +
         '<ul class="list-circle">' +
-        '<li>Angular 5</li>' +
-        '<li>Bootstrap 4</li>' +
+        '<li>Angular 1.6</li>' +
         '<li>Angular Material</li>' +
         '<li>SCSS</li>'
       '</ul>';
