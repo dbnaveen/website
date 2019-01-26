@@ -45,7 +45,7 @@ export class DialogComponent implements OnInit {
     });
     this.galleryOptions = [
       {
-        // "previewFullscreen": false,
+        // "previewFullscreen": true,
         "imageArrowsAutoHide": true,
         // "thumbnailsArrowsAutoHide": false,
         // "preview": true,
@@ -57,7 +57,7 @@ export class DialogComponent implements OnInit {
         // thumbnailsColumns: 4,
         imageSwipe: true, previewSwipe: true,
         thumbnailsMoveSize:4,
-        imageAutoPlay: true, imageAutoPlayPauseOnHover: true, previewAutoPlay: false, previewAutoPlayPauseOnHover: true,
+        imageAutoPlay: false, imageAutoPlayPauseOnHover: true, previewAutoPlay: false, previewAutoPlayPauseOnHover: true,
         previewCloseOnClick: true, previewCloseOnEsc: true,
         arrowNextIcon: 'fa fa-chevron-right',
         arrowPrevIcon: 'fa fa-chevron-left',
