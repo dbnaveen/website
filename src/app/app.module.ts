@@ -6,6 +6,7 @@ import { MaterialModule } from './material.module';
 import { NguCarouselModule } from '@ngu/carousel';
 import { MatDialogModule, MatButtonModule } from '@angular/material';
 import { NgxGalleryModule } from 'ngx-gallery';
+import { ReactiveFormsModule } from '@angular/forms'
 
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -19,6 +20,7 @@ import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { InterestsComponent } from './interests/interests.component';
 import { FooterComponent } from './footer/footer.component';
 import { DialogComponent } from './shared/dialog/dialog.component';
+import { ConnectComponent } from './connect/connect.component';
 
 const appRoutes: Routes = [
   // { path: 'dashboard', component:  DashboardComponent },
@@ -39,7 +41,8 @@ const appRoutes: Routes = [
     TestimonialsComponent,
     InterestsComponent,
     FooterComponent,
-    DialogComponent
+    DialogComponent,
+    ConnectComponent
   ],
   imports: [
     BrowserModule,
@@ -49,7 +52,8 @@ const appRoutes: Routes = [
     NguCarouselModule,
     MatDialogModule,
     MatButtonModule,
-    NgxGalleryModule
+    NgxGalleryModule,
+    ReactiveFormsModule
   ],
   entryComponents: [
     DialogComponent

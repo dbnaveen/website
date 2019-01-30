@@ -1,0 +1,55 @@
+<div class="blog-container section-container">
+  <div class="container">
+
+    <div class="row">
+      <div class="col blog section-description wow fadeIn p-0">
+        <h5 class="dark m-0">CONTACT</h5>
+      </div>
+    </div>
+    <div class="row m-3">
+      <div class="col blog wow fadeIn">
+        <div class="thanks">
+          <i class="fa fa-quote-left pr-2"></i>
+          <span class="note">Thanks for taking the time to view the website. Leave your feedback or connect with me below.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="row d-flex justify-content-around align-items-center">
+      <div class="row col-10 p-0 d-flex justify-content-around">
+        <form [formGroup]="registerForm" class="col-12 col-md-6 connect-form">
+
+          <div class="form-group">
+            <label class="d-flex">Name</label>
+            <input type="text" formControlName="name" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.name.errors }" />
+            <div *ngIf="submitted && f.name.errors" class="invalid-feedback">
+              <div *ngIf="f.name.errors.required">Name is required</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="d-flex">Email</label>
+            <input type="text" formControlName="email" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+            <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+              <div *ngIf="f.email.errors.required">Email is required</div>
+              <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="d-flex">Message</label>
+            <textarea rows="4" formControlName="message" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.message.errors }"></textarea>
+            <div *ngIf="submitted && f.message.errors" class="invalid-feedback">
+              <div *ngIf="f.message.errors.required">Message is required</div>
+            </div>
+          </div>
+          <div class="form-group d-flex justify-content-between">
+            <button class="btn btn-primary submit-form" (click)="onClear()">Clear</button>
+            <button class="btn btn-primary submit-form" (click)="onSubmit()">Submit</button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+
+
+  </div>
+</div>

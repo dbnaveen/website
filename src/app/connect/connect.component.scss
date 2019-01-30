@@ -1,0 +1,49 @@
+@import '../../sass/mixins';
+
+.blog-container{
+    padding-bottom: 40px !important;
+}
+.form-control{
+    border-color: #E6ECF8;
+    border-radius: 3px;
+    font-family: 'Montserrat', sans-serif;
+    color: $slate;
+}
+.form-control:focus {
+    box-shadow: none;
+    border-color: #E6ECF8;
+}
+.connect-form{
+    label{
+        font-family: 'Montserrat', sans-serif;
+        font-size: $f-14;
+        color: $warm-grey;
+        font-weight: 600;
+    }
+    .submit-form{
+        font-family: 'Montserrat', sans-serif;
+        background-color: transparent;
+        border-color: $sandy-brown;
+        font-size: $f-14;
+        color: $sandy-brown;
+        border-radius: 100px;
+        padding: 5px 20px;
+    }
+    .submit-form:focus{
+        box-shadow: none;
+    }
+    .submit-form:hover{
+        background-color: $sandy-brown;
+        color: $beige;
+    }
+}
+.thanks{
+    i{
+        color: $pinkish-grey;
+    }
+    .note{
+        font-family: 'Montserrat', sans-serif;
+        font-size: $f-14;
+        color: $warm-grey;
+    }
+}
