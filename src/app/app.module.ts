@@ -7,6 +7,7 @@ import { NguCarouselModule } from '@ngu/carousel';
 import { MatDialogModule, MatButtonModule } from '@angular/material';
 import { NgxGalleryModule } from 'ngx-gallery';
 import { ReactiveFormsModule } from '@angular/forms'
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -53,7 +54,8 @@ const appRoutes: Routes = [
     MatDialogModule,
     MatButtonModule,
     NgxGalleryModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   entryComponents: [
     DialogComponent

@@ -1,5 +1,5 @@
 <div class="skills-container section-container" id="skills">
-  <div class="row banner">
+  <div class="row banner mt-1">
     <div class="col services section-description wow fadeIn m-0 p-3 d-flex flex-column justify-content-center wow fadeInDown">
       <h4 class="m-0 f-16">What I know</h4>
       <h2 class="m-0 f-28"><strong>PROFESSIONAL SKILLS</strong></h2>
@@ -29,9 +29,9 @@
       <div class="col-12 col-lg-12 wow fadeInUp">
         <div class="mat-tabs-centered-wrapper">
           <mat-tab-group mat-stretch-tabs>
-            <mat-tab label="DEVELOPER SKILLS">
-              <div class="row wow fadeInDown developer-skills">
-                <div class="col-6 col-lg-6 d-flex justify-content-start align-items-center">
+            <mat-tab label="Developer Skills">
+              <div class="row wow fadeInLeftBig devSkills">
+                <!-- <div class="col-6 col-lg-6 d-flex justify-content-start align-items-center">
                   <i class="fas fa-circle p-3"></i>
                   <p class="key text-ellipse m-0"> javascript framework </p>
                 </div>
@@ -93,10 +93,18 @@
                 </div>
                 <div class="col-6 col-lg-6 d-flex justify-content-start align-items-center">
                   <p class="value text-ellipse m-0"> : Adobe XD CC </p>
-                </div>
+                </div> -->
+                <table class="table table-sm">
+                  <tbody *ngIf="developerSkills.length > 0">
+                    <tr *ngFor="let devSkill of developerSkills;">
+                      <td class="key">{{devSkill['key']}}</td>
+                      <td class="value">{{devSkill['value']}}</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </mat-tab>
-            <mat-tab label="DESIGN SKILLS">
+            <mat-tab label="Design Skills">
               <div class="row wow fadeInDown design-skills">
                 <div class="col-12 col-lg-6">
                   <img src="/assets/img/skills/images.png">

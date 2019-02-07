@@ -46,7 +46,7 @@ export class DialogComponent implements OnInit {
     this.galleryOptions = [
       {
         // "previewFullscreen": true,
-        "imageArrowsAutoHide": true,
+        "imageArrowsAutoHide": false,
         // "thumbnailsArrowsAutoHide": false,
         // "preview": true,
         // imagePercent: 60,

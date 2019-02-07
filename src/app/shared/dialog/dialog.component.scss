@@ -23,11 +23,6 @@
 .mat-tab-group.mat-primary .mat-tab-label.cdk-program-focused:not(.mat-tab-disabled){
     background-color: transparent !important;
 }
-// .mat-dialog-content{
-//     max-height: inherit !important;
-//     // max-height: 100%;
-//     // overflow: hidden;
-// }
 .mat-dialog-container{
     // padding: 12px 0px 0px 10px;
     padding: 0px;
@@ -37,11 +32,7 @@
     height: 100%;
     margin: 0px;
     padding: 0px;
-    // overflow: hidden;
 }
-// .mat-tab-group, .mat-tab-body, .mat-tab-body-content, .mat-tab-body-wrapper{
-//     height: 100%;
-// }
 
 .ngx-gallery-icon .ngx-gallery-icon-content{
     color: $sandy-brown;
