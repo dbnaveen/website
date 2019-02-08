@@ -28,7 +28,7 @@ export class ConnectComponent implements OnInit {
         "subject": "Thundercats are GO!!!",
         "text": "Sword of Omens, give me sight BEYOND sight"
       },
-      "recipients": [{ "address": "cdivya700@gmail.com" }]
+      "recipients": [{ "address": "naveendb92@gmail.com" }]
     }).subscribe(
       data => {
         console.log(data);
