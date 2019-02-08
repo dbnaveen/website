@@ -14,8 +14,8 @@ export class ConfigService {
   private setHeaders(headers: HttpHeaders | null, type?): object {
       var token = '637974fe9fc30bdc031b900df437bc1b5ee28c99';
       headers = headers || new HttpHeaders();
-      headers = headers.append('Access-Control-Allow-Origin', '*')
-      headers = headers.append('Authorization', `Basic ${token}`)
+      headers = headers.append('Access-Control-Allow-Origin', 'naveendb.com')
+      headers = headers.append('Authorization', `${token}`)
       return { headers };
   }
 
@@ -27,18 +27,5 @@ export class ConfigService {
     headers.append('Content-Type', 'application/json');
     headers.append('Authorization', 'Basic ' + btoa('user-name:password')); 
   }
-
-  post(url, data) {
-    // let headers = new Headers();
-    // this.createAuthHeader(headers);
-    return this.http.post('https://api.sparkpost.com/api/v1/transmissions', data, {
-      headers : new HttpHeaders({
-        'Content-Type' : 'application/json',
-        'Access-Control-Allow-Origin' : '*',
-        'Authorization' : 'Basic 637974fe9fc30bdc031b900df437bc1b5ee28c99'
-      })
-    });
-  }
-
 
 }

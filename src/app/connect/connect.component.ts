@@ -19,31 +19,7 @@ export class ConnectComponent implements OnInit {
   get f() { return this.registerForm.controls; }
 
   onSubmit() {
-    // this.submitted = true;
-    // if (this.registerForm.invalid) {
-    //   return;
-    // } else {
-    //   this.sendMail();
-    // }
-    // this.UtilitityService.postData('transmissions', {
-    //   "options": {
-    //     "sandbox": true
-    //   },
-    //   "content": {
-    //     "from": "sandbox@sparkpostbox.com",
-    //     "subject": "Thundercats are GO!!!",
-    //     "text": "Sword of Omens, give me sight BEYOND sight"
-    //   },
-    //   "recipients": [{ "address": "naveendb92@gmail.com" }]
-    // }).subscribe(
-    //   data => {
-    //     console.log(data);
-    //   },
-    //   error => {
-    //     console.log(error);
-    //   }
-    // );
-    var data = {
+    this.UtilitityService.postData('transmissions', {
       "options": {
         "sandbox": true
       },
@@ -52,11 +28,13 @@ export class ConnectComponent implements OnInit {
         "subject": "Thundercats are GO!!!",
         "text": "Sword of Omens, give me sight BEYOND sight"
       },
-      "recipients": [{ "address": "naveendb92@gmail.com" }]
-    };
-    this.http.post('https://api.sparkpost.com/api/v1/transmissions', data).subscribe(
+      "recipients": [{ "address": "cdivya700@gmail.com" }]
+    }).subscribe(
       data => {
         console.log(data);
+      },
+      error => {
+        console.log(error);
       }
     );
   }
