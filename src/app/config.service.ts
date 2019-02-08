@@ -14,7 +14,7 @@ export class ConfigService {
   private setHeaders(headers: HttpHeaders | null, type?): object {
       var token = '637974fe9fc30bdc031b900df437bc1b5ee28c99';
       headers = headers || new HttpHeaders();
-      headers = headers.append('Access-Control-Allow-Origin', 'http://www.naveendb.com/')
+      headers = headers.append('Access-Control-Allow-Origin', '*')
       headers = headers.append('Authorization', `${token}`)
       return { headers };
   }
@@ -23,9 +23,5 @@ export class ConfigService {
     return this.http.post(this.configUrl + url, params, this.setHeaders(headers, type));
   }
 
-  createAuthHeader(headers: Headers) {
-    headers.append('Content-Type', 'application/json');
-    headers.append('Authorization', 'Basic ' + btoa('user-name:password')); 
-  }
 
 }
