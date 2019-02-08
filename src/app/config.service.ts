@@ -14,7 +14,7 @@ export class ConfigService {
   private setHeaders(headers: HttpHeaders | null, type?): object {
       var token = '637974fe9fc30bdc031b900df437bc1b5ee28c99';
       headers = headers || new HttpHeaders();
-      headers = headers.append('Access-Control-Allow-Origin', 'naveendb.com')
+      headers = headers.append('Access-Control-Allow-Origin', 'http://www.naveendb.com/')
       headers = headers.append('Authorization', `${token}`)
       return { headers };
   }
