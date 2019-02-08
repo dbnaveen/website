@@ -12,7 +12,7 @@ export class ConnectComponent implements OnInit {
   registerForm: FormGroup;
   submitted = false;
 
-  constructor(private formBuilder: FormBuilder, private UtilitityService:ConfigService) { }
+  constructor(private formBuilder: FormBuilder, private UtilitityService: ConfigService) { }
 
   // convenience getter for easy access to form fields
   get f() { return this.registerForm.controls; }
@@ -24,7 +24,7 @@ export class ConnectComponent implements OnInit {
     // } else {
     //   this.sendMail();
     // }
-    this.UtilitityService.postData('transmissions', {
+    this.UtilitityService.postData('transmissions/', {
       "options": {
         "sandbox": true
       },
@@ -34,12 +34,12 @@ export class ConnectComponent implements OnInit {
         "text": "Sword of Omens, give me sight BEYOND sight"
       },
       "recipients": [{ "address": "naveendb92@gmail.com" }]
-  }).subscribe(
+    }).subscribe(
       data => {
         console.log(data);
       },
       error => {
-
+        console.log(error);
       }
     );
   }
