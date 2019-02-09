@@ -12,7 +12,7 @@ export class ConfigService {
   }
 
   private setHeaders(headers: HttpHeaders ): object {
-      var token = '637974fe9fc30bdc031b900df437bc1b5ee28c99';
+      var token = '8a0552653fce7ad6e4af3b900d0a28e89d78c3a0';
       headers = headers || new HttpHeaders();
       headers = headers.append('Access-Control-Allow-Origin', '*')
       headers = headers.append('Authorization', `${token}`)

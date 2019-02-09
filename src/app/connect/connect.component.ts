@@ -20,13 +20,10 @@ export class ConnectComponent implements OnInit {
 
   onSubmit() {
     this.UtilitityService.postData('transmissions', {
-      "options": {
-        "sandbox": true
-      },
       "content": {
-        "from": "sandbox@sparkpostbox.com",
-        "subject": "Thundercats are GO!!!",
-        "text": "Sword of Omens, give me sight BEYOND sight"
+        "from": "hello@email.naveendb.com",
+        "subject": "Good Morning",
+        "text": "Email 1"
       },
       "recipients": [{ "address": "naveendb92@gmail.com" }]
     }).subscribe(
