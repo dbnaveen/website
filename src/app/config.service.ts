@@ -9,6 +9,7 @@ export class ConfigService {
 
   constructor(private http: HttpClient) {
     this.configUrl = '/api/v1/';
+    this.configUrl = 'https://api.sparkpost.com/api/v1/';
   }
 
   private setHeaders(headers: HttpHeaders ): object {
