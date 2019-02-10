@@ -22,6 +22,7 @@ import { InterestsComponent } from './interests/interests.component';
 import { FooterComponent } from './footer/footer.component';
 import { DialogComponent } from './shared/dialog/dialog.component';
 import { ConnectComponent } from './connect/connect.component';
+// import { AppServerModule } from './app-server/app-server.module';
 
 const appRoutes: Routes = [
   // { path: 'dashboard', component:  DashboardComponent },
@@ -46,7 +47,7 @@ const appRoutes: Routes = [
     ConnectComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({appId: 'my-app'}),
     RouterModule.forRoot(appRoutes, { useHash: false }),
     BrowserAnimationsModule,
     MaterialModule,
@@ -55,7 +56,7 @@ const appRoutes: Routes = [
     MatButtonModule,
     NgxGalleryModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   entryComponents: [
     DialogComponent
