@@ -47,7 +47,7 @@ const appRoutes: Routes = [
     ConnectComponent
   ],
   imports: [
-    BrowserModule.withServerTransition({appId: 'my-app'}),
+    BrowserModule.withServerTransition({appId: 'personal-website1'}),
     RouterModule.forRoot(appRoutes, { useHash: false }),
     BrowserAnimationsModule,
     MaterialModule,
