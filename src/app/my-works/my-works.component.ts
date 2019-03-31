@@ -112,6 +112,15 @@ export class MyWorksComponent implements OnInit {
       'IOT/models-list.png', 'IOT/modal.png', 'IOT/geo-fence.png', 'IOT/asset-register.png', 'IOT/asset-register-manual.png', 'IOT/asset-register-upload.png']
       this.openDialog(title, desc, screenshots);
     }
+    if (widgetName === 'solarOperations') {
+      title = 'Solar Operations Watch';
+      desc = '"Solar Operations Watch" an application built for the clien-Leading Lighting and Energy solutions provider.'+
+        '<br><br>' +
+        'Developed an analytical product for the "Internet of Things" infrastructure which aids the end user ensure that'+
+        'the system will not run out of energy';
+      screenshots = ['solar/overview.png', 'solar/generation.png', 'solar/consumption.png', 'solar/storage1.png', 'solar/storage2.png']
+      this.openDialog(title, desc, screenshots);
+    }
 
   }
 
