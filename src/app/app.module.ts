@@ -22,12 +22,8 @@ import { InterestsComponent } from './interests/interests.component';
 import { FooterComponent } from './footer/footer.component';
 import { DialogComponent } from './shared/dialog/dialog.component';
 import { ConnectComponent } from './connect/connect.component';
-// import { AppServerModule } from './app-server/app-server.module';
 
 const appRoutes: Routes = [
-  // { path: 'dashboard', component:  DashboardComponent },
-  // { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
-  // { path: '**', redirectTo: 'dashboard', pathMatch: 'full' }
 ]
 
 @NgModule({

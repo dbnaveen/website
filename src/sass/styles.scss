@@ -1,98 +1,128 @@
-@import './mixins';
+@import "./mixins";
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
+
 body {
-    font-family: 'Roboto', sans-serif;
-    // font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    font-weight: normal;
-    color: #888;
-    line-height: 30px;
-    text-align: center;
-    position: relative;
-    width: 100%;
-    overflow-x: hidden;
-    // background: url('../assets/img/backgrounds/background_crystal.png') repeat;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  color: #888;
+  line-height: 30px;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+  height: 100%;
+}
+div, svg{
+    visibility: visible !important;
 }
 
-strong { font-weight: 600; }
-a, a:hover, a:focus {
-    color: $black;
-    text-decoration: none;
-    transition: all .3s;
+strong {
+  font-weight: 600;
 }
-h1, h2 {
-    margin-top: 10px;
-    // font-family: 'Montserrat', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    font-size: 38px;
-    font-weight: 300;
+a,
+a:hover,
+a:focus {
+  color: $black;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+h1,
+h2 {
+  margin-top: 10px;
+  // font-family: 'Montserrat', sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-size: 38px;
+  font-weight: 300;
+  color: $slate;
+  line-height: 50px;
+}
+
+.f-28 {
+  font-size: $f-28;
+}
+.f-16 {
+  font-size: $f-16;
+}
+.f-12 {
+  font-size: $f-12;
+}
+.text-muted {
+  color: $warm-grey !important;
+}
+
+.header-no {
+  .number {
+    font-size: 32px;
+    color: $pinkish-grey;
+    font-weight: bold;
+  }
+  .text {
+    font-size: 20px;
+    font-weight: 500;
     color: $slate;
-    line-height: 50px;
-}
-
-.f-28{ font-size: $f-28; }
-.f-16{ font-size: $f-16; }
-.f-12{ font-size: $f-12; }
-.text-muted{
-    color: $warm-grey !important;
-}
-
-.header-no{
-    .number{
-        font-size: 32px;
-        color: $pinkish-grey;
-        font-weight: bold;
-    }
-    .text{
-        font-size: 20px;
-        font-weight: 500;
-        color: $slate;
-        padding-left: 10px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-}
-.text-ellipse{
+    padding-left: 10px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+  }
+}
+.text-ellipse {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .banner {
-    margin: 75px 0px 40px;
-    width: 100%;
-    background-image: url("/assets/img/backgrounds/banner.jpg");
-    h4{
-        font-variant: all-petite-caps;
-    }
+  margin: 75px 0px 40px;
+  width: 100%;
+  background-image: url("/assets/img/backgrounds/banner.jpg");
+  h4 {
+    font-variant: all-petite-caps;
+  }
 }
 .hexagon {
-    height: 30px;
-    width: 30px;
-    transform: rotate(90deg);
-    margin: 0px 15px;
-    path {
-        stroke: $sandy-brown;
-        stroke-width: 10px;
-        fill: none;
-    }
+  height: 30px;
+  width: 30px;
+  transform: rotate(90deg);
+  margin: 0px 15px;
+  path {
+    stroke: $sandy-brown;
+    stroke-width: 10px;
+    fill: none;
+  }
 }
 .line-border {
-    background: $sandy-brown;
-    height: 2.5px;
-    width: 150px;
+  background: $sandy-brown;
+  height: 2.5px;
+  width: 150px;
 }
-.shadow{
-    box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12) !important;
+.shadow {
+  box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12) !important;
 }
-.dark{
-    color: $dark;
+.dark {
+  color: $dark;
 }
 .background-alt-dark {
-    background-color: #f5f5f5;
+  background-color: #f5f5f5;
 }
 .mat-tab-group.mat-primary .mat-ink-bar {
-    background-color: $sandy-brown !important;
+  background-color: $sandy-brown !important;
+}
+
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(195, 161, 101, 0.15);
+}
+::-webkit-scrollbar-thumb {
+  background: $sandy-brown;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: $sandy-brown;
 }
