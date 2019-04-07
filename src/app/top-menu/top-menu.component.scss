@@ -1,54 +1,93 @@
-@import '../../sass/mixins';
+@import "../../sass/mixins";
 .navbar {
-    background: $white;
-    backface-visibility: hidden;
-    box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
-    z-index: 100;
+  background: $white;
+  backface-visibility: hidden;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+  z-index: 100;
 }
 .navbar.navbar-no-bg {
-    background: #444;
-    background: transparent;
-    box-shadow: none;
+  background: #444;
+  background: transparent;
+  box-shadow: none;
 }
 .navbar-dark .navbar-nav .nav-link {
-    color: #fff;
-    color: $slate;
-    border: 0;
-    font-size: 13px;
-    font-weight: 500;
+  color: #fff;
+  color: $slate;
+  border: 0;
+  font-size: 13px;
+  font-weight: 500;
 }
-.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
-    color: $sandy-brown;
+.navbar-dark .navbar-nav .active > .nav-link,
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .show > .nav-link {
+  color: $sandy-brown;
 }
 .navbar-dark .navbar-nav .nav-link:active {
-    color: $sandy-brown;
-    outline: 0;
-}
- 
-.navbar-expand-md .navbar-nav .nav-link {
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
- 
-.navbar-brandName {
-    justify-content: center;
-    display: flex;
-    font-size: 24px;
-    .firstname, .lastname{
-        font-weight: 500;
-        color: $slate;
-    }
-    .lastname{
-        color: $sandy-brown;
-    }
-}
-.mat-button, .mat-flat-button, .mat-icon-button, .mat-stroked-button{
-    border-radius: 0px !important;
-}
-.navbar-toggler i{
-    color: $slate;
-}
-.navbar-collapse{
-    background-attachment: fixed;
+  color: $sandy-brown;
+  outline: 0;
 }
 
+.navbar-expand-md .navbar-nav .nav-link {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.navbar-brandName {
+  justify-content: center;
+  display: flex;
+  font-size: 24px;
+  .firstname,
+  .lastname {
+    font-weight: 500;
+    color: $slate;
+  }
+  .lastname {
+    color: $sandy-brown;
+  }
+}
+.mat-button,
+.mat-flat-button,
+.mat-icon-button,
+.mat-stroked-button {
+  border-radius: 0px !important;
+}
+.navbar-toggler i {
+  color: $slate;
+}
+.navbar-collapse {
+  background-attachment: fixed;
+}
+.navbar-nav {
+  transition: trasnform 0.5s ease-in;
+}
+
+.burger div {
+  width: 23px;
+  height: 2px;
+  margin: 4px;
+  background-color: $slate;
+  transition: all 0.5s ease;
+}
+.toggle {
+  .line1 {
+    transform: rotate(-45deg) translate(-4px, 4px);
+  }
+  .line2 {
+    opacity: 0;
+  }
+  .line3 {
+    transform: rotate(45deg) translate(-4px, -5px);
+  }
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(75px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
