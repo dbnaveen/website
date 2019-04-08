@@ -13,6 +13,18 @@
     margin: 15px 0px;
 }
 
+.top-content {
+    .intro {
+        display: flex;
+    }
+    .title .typing {
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: .07em solid $sandy-brown; /* The typwriter cursor */
+        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+        animation: blink-caret 0.6s step-end infinite;
+    }
+}
+
 .mat-button-wrapper {
     display: -webkit-box!important;
     display: -ms-flexbox!important;
@@ -64,3 +76,8 @@
         font-size: $f-14;
     }
 }
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: $slate; }
+  }
