@@ -18,7 +18,7 @@ export class TopMenuComponent implements OnInit {
       if (this.navLinks[i].style.animation) {
         this.navLinks[i].style.animation = "";
       } else {
-        this.navLinks[i].style.animation = `navLinkFade 0.5s ease backwards ${i / 5}s`;
+        this.navLinks[i].style.animation = `navLinkFade 0.5s ease backwards ${i / 12}s`;
       }
     }
   }

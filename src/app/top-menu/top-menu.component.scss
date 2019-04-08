@@ -14,8 +14,11 @@
   color: #fff;
   color: $slate;
   border: 0;
-  font-size: 13px;
-  font-weight: 500;
+  font-size: $f-12;
+  font-weight: bold;
+  font-family: 'Kameron', serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 .navbar-dark .navbar-nav .active > .nav-link,
 .navbar-dark .navbar-nav .nav-link.active,
