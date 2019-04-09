@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-top-content',
@@ -8,7 +9,13 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class TopContentComponent implements OnInit {
 
-  constructor() { }
+  constructor(private meta: Meta) {
+    this.meta.addTags([
+      {name: 'description', content: 'Front End Developer and Designer'},
+      {name: 'author', content: 'Naveen D B'},
+      {name: 'keywords', content: 'Angular 7, Bootstrap 4, navbar fixed for mobile, burger animation, link animation'}
+    ]);
+  }
 
   type () {
     const texts = ['  Developer & Designer    '];

@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { Meta } from '@angular/platform-browser';
 
 @Component({
   selector: "app-top-menu",
@@ -6,7 +7,15 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./top-menu.component.scss"]
 })
 export class TopMenuComponent implements OnInit {
-  constructor() {}
+  
+  constructor(private meta: Meta) {
+    this.meta.addTags([
+      {name: 'description', content: 'Top menu navbar with fixed position and on mobile deives it adds a burger and links  with animation'},
+      {name: 'author', content: 'Naveen D B'},
+      {name: 'keywords', content: 'Angular 7, Bootstrap 4, navbar fixed for mobile, burger animation, link animation, '}
+    ]);
+  }
+  
   navLinks: any;
 
   toggleBurger() {
