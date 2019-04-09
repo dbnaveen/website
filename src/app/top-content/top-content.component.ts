@@ -33,7 +33,7 @@ export class TopContentComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.type();
+    // this.type();
   }
 
 }

@@ -14,22 +14,16 @@ body {
   overflow-x: hidden;
   height: 100%;
 }
-div, svg{
-    visibility: visible !important;
-}
 
 strong {
   font-weight: 600;
 }
-a,
-a:hover,
-a:focus {
+a, a:hover, a:focus {
   color: $black;
   text-decoration: none;
   transition: all 0.3s;
 }
-h1,
-h2 {
+h1, h2 {
   margin-top: 10px;
   // font-family: 'Montserrat', sans-serif;
   font-family: "Roboto", sans-serif;
@@ -42,14 +36,23 @@ h2 {
 .f-28 {
   font-size: $f-28;
 }
+.f-20 {
+  font-size: $f-20;
+}
 .f-16 {
   font-size: $f-16;
+}
+.f-14 {
+  font-size: $f-14;
 }
 .f-12 {
   font-size: $f-12;
 }
 .text-muted {
   color: $warm-grey !important;
+}
+.line-height-inherit {
+  line-height: inherit;
 }
 
 .header-no {
