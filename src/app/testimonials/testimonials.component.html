@@ -1,13 +1,16 @@
 <!-- testimonials -->
 <div class="testimonials1-container section-container" id="testimonials1">
   <div class="row banner mt-1">
-    <div class="col portfolio section-description wow fadeIn m-0 p-3 d-flex flex-column justify-content-center">
+    <div
+      class="col portfolio section-description wow fadeIn m-0 p-3 d-flex flex-column justify-content-center"
+    >
       <h4 class="m-0 f-16">What people say</h4>
       <h2 class="m-0 f-28"><strong>TESTIMONIALS</strong></h2>
       <div class="d-flex justify-content-center align-items-center">
         <div class="divider-1 line-border wow fadeInUp"></div>
-        <svg viewBox='0 0 120 100' class="hexagon wow fadeInUp">
-          <path d='M38,2
+        <svg viewBox="0 0 120 100" class="hexagon wow fadeInUp">
+          <path
+            d="M38,2
                                L82,2 
                                A12,12 0 0,1 94,10
                                L112,44 
@@ -19,7 +22,8 @@
                                L8,56
                                A12,12 0 0,1 8,44
                                L26,10
-                               A12,12 0 0,1 38,2' />
+                               A12,12 0 0,1 38,2"
+          />
         </svg>
         <div class="divider-1 line-border wow fadeInUp"></div>
       </div>
@@ -27,36 +31,82 @@
   </div>
   <div class="container">
     <div class="row experience">
-
-      <ngu-carousel #myCarousel [inputs]="carouselConfig" [dataSource]="carouselItems" class="w-100">
-        <div *nguCarouselDef="let item;" class="item testimonials">
+      <ngu-carousel
+        #myCarousel
+        [inputs]="carouselConfig"
+        [dataSource]="carouselItems"
+        class="w-100"
+      >
+        <div *nguCarouselDef="let item" class="item testimonials">
           <div class="tile flex-column h-100 p-4">
             <div class="name">
-              <span class="title"> {{item['title']}} </span>
-              <p class="sub-title">({{item['subTitle']}})</p>
+              <span class="title"> {{ item["title"] }} </span>
+              <p class="sub-title">({{ item["subTitle"] }})</p>
             </div>
             <div class="img">
-              <img *ngIf="item['id'] === '1'" src="assets/img/testimonials/jojo.jpg" data-at2x="assets/img/testimonials/jojo.jpg" alt="Profile" width="100" height="100">
-              <img *ngIf="item['id'] === '2'" src="assets/img/testimonials/darshit.jpg" data-at2x="assets/img/testimonials/darshit.jpg" alt="Profile" width="100" height="100">
+              <img
+                *ngIf="item['id'] === '1'"
+                src="assets/img/testimonials/jojo.jpg"
+                data-at2x="assets/img/testimonials/jojo.jpg"
+                alt="Profile"
+                width="100"
+                height="100"
+              />
+              <img
+                *ngIf="item['id'] === '2'"
+                src="assets/img/testimonials/darshit.jpg"
+                data-at2x="assets/img/testimonials/darshit.jpg"
+                alt="Profile"
+                width="100"
+                height="100"
+              />
             </div>
             <div class="message">
               <p class="m-0">
-                {{item['message']}}
+                {{ item["message"] }}
               </p>
             </div>
             <!-- <div class="more d-flex w-100 justify-content-end"> Read more</div> -->
+            <div
+              class="redirect"
+              matTooltip="View on LinkedIn"
+              matTooltipClass="hoverLinkedIn"
+              (click)="handleLinkedInClick(item['id'])"
+            >
+              <svg
+                fit=""
+                focusable="false"
+                height="100%"
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 24 24"
+                width="100%"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+                ></path>
+              </svg>
+            </div>
           </div>
         </div>
-        <button NguCarouselNext class="rightRs"><i class="fas fa-chevron-right"></i></button>
-        <button NguCarouselPrev class="leftRs"><i class="fas fa-chevron-left"></i></button>
+        <button NguCarouselNext class="rightRs">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+        <button NguCarouselPrev class="leftRs">
+          <i class="fas fa-chevron-left"></i>
+        </button>
         <ul class="myPoint" NguCarouselPoint>
-          <li *ngFor="let j of myCarousel.pointNumbers; let j = index" [class.active]="j==myCarousel.activePoint" (click)="myCarousel.moveTo(j)"> </li>
+          <li
+            *ngFor="let j of myCarousel.pointNumbers; let j = index"
+            [class.active]="j == myCarousel.activePoint"
+            (click)="myCarousel.moveTo(j)"
+          ></li>
         </ul>
       </ngu-carousel>
-
     </div>
   </div>
-  
+
   <app-interests></app-interests>
   <app-connect></app-connect>
 </div>
