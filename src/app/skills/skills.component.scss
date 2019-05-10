@@ -1,81 +1,21 @@
-@import '../../sass/mixins';
+@import "../../sass/mixins";
 
-.skills-container{
-    background: url(/assets/img/works/background.jpg) repeat;
+.skills-container {
+  // background: url(/assets/img/works/background.jpg) repeat;
+  background-color: $white;
+  padding: 0px !important;
 }
-.skills-section{
-    // .mat-tab-header, .mat-tab-nav-bar{
-    //     border-bottom: none !important;
-    // }
-    .mat-tab-header {
-        border-bottom: 1px solid #eeeeee !important;
+.skills-section {
+  #dev_skills,
+  #design_skills {
+    path {
+      fill: $sandy-brown;
     }
-    .mat-tab-body-content {
-        overflow: hidden;
+    .google-visualization-tooltip {
+      display: block;
     }
-    .mat-tab-label-active {
-        color: $slate !important;
-        opacity: 1;
-    }
-    // .mat-ink-bar{
-    //     background-color: transparent !important;
-    // }
-    // .mat-tab-label-active{
-    //     border: 1px dashed $sandy-brown;
-    //     opacity: 1;
-    //     color: $sandy-brown;
-    // }
-    .design-skills {
-        margin-top: 50px;
-        img {
-            border: 1px solid $very-light-purple;
-            padding: 5px;
-            height: 125px;
-            width: 125px;
-            margin-bottom: 15px;
-        }
-        p {
-            font-size: $f-12;
-            color: $slate;
-            font-weight: 500;
-        }
-    }
-    .devSkills {
-        margin-top: 50px;
-        .table {
-            .key {
-                background-color: rgba(196, 162, 102, 0.75);
-                width: 50%;
-                color: $dark-grey-blue;
-                color: $white;
-                font-size: 12px;
-                text-align: right;
-                border-top: 1px solid rgba(255,255,255,.25);
-                padding-right: 4rem;
-            }
-            .value {
-                background-color: rgba(196, 162, 102, 0.85);
-                width: 50%;
-                color: $white;
-                font-size: 12px;
-                text-align: left;
-                border-top: 1px solid rgba(255,255,255,.25);
-                padding-left: 4rem;
-            }
-        }
-    }
+  }
 }
 
 @media only screen and (max-width: 600px) {
-    .mat-tab-label-content {
-        font-size: 10px !important;
-    }
-    .devSkills {
-        .table {
-            .key, .value {
-                font-size: 8px !important;
-                padding: .3rem !important;
-            }
-        }
-    }
 }
