@@ -93,7 +93,7 @@ export class SkillsComponent implements OnInit {
       width: window.innerWidth,
       tooltip: { isHtml: true },
       maxFontSize: 14,
-      backgroundColor: "transparent",
+      backgroundColor: "#fff",
       wordtree: {
         format: "explicit",
         type: "suffix"
