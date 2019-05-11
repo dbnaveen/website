@@ -1,7 +1,10 @@
 @import "./mixins";
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
-
+html {
+  width: 100% !important;
+  overflow-x: hidden !important;
+}
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -11,19 +14,22 @@ body {
   text-align: center;
   position: relative;
   width: 100%;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   height: 100%;
 }
 
 strong {
   font-weight: 600;
 }
-a, a:hover, a:focus {
+a,
+a:hover,
+a:focus {
   color: $black;
   text-decoration: none;
   transition: all 0.3s;
 }
-h1, h2 {
+h1,
+h2 {
   margin-top: 10px;
   // font-family: 'Montserrat', sans-serif;
   font-family: "Roboto", sans-serif;
@@ -114,7 +120,6 @@ h1, h2 {
 .mat-tab-group.mat-primary .mat-ink-bar {
   background-color: $sandy-brown !important;
 }
-
 
 /* Scrollbar */
 // ::-webkit-scrollbar {
