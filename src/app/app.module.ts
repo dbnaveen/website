@@ -22,6 +22,7 @@ import { InterestsComponent } from "./interests/interests.component";
 import { FooterComponent } from "./footer/footer.component";
 import { DialogComponent } from "./shared/dialog/dialog.component";
 import { ConnectComponent } from "./connect/connect.component";
+import { HexagonComponent } from './common-lib/svg/hexagon/hexagon.component';
 
 const appRoutes: Routes = [];
 
@@ -39,7 +40,8 @@ const appRoutes: Routes = [];
     InterestsComponent,
     FooterComponent,
     DialogComponent,
-    ConnectComponent
+    ConnectComponent,
+    HexagonComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: "personal-website1" }),
