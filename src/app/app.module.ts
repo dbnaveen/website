@@ -23,6 +23,7 @@ import { FooterComponent } from "./footer/footer.component";
 import { DialogComponent } from "./shared/dialog/dialog.component";
 import { ConnectComponent } from "./connect/connect.component";
 import { HexagonComponent } from './common-lib/svg/hexagon/hexagon.component';
+import { WorkKpiComponent } from './common-lib/work-kpi/work-kpi.component';
 
 const appRoutes: Routes = [];
 
@@ -41,7 +42,8 @@ const appRoutes: Routes = [];
     FooterComponent,
     DialogComponent,
     ConnectComponent,
-    HexagonComponent
+    HexagonComponent,
+    WorkKpiComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: "personal-website1" }),
