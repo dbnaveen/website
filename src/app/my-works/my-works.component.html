@@ -30,4 +30,7 @@
       </div>
     </div>
   </div>
+
+  <app-modal (closeEvent)="closeWorkModal($event)" *ngIf="!closeModal">
+  </app-modal>
 </div>

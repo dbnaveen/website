@@ -24,6 +24,7 @@ import { DialogComponent } from "./shared/dialog/dialog.component";
 import { ConnectComponent } from "./connect/connect.component";
 import { HexagonComponent } from './common-lib/svg/hexagon/hexagon.component';
 import { WorkKpiComponent } from './common-lib/work-kpi/work-kpi.component';
+import { ModalComponent } from './common-lib/modal/modal.component';
 
 const appRoutes: Routes = [];
 
@@ -43,7 +44,8 @@ const appRoutes: Routes = [];
     DialogComponent,
     ConnectComponent,
     HexagonComponent,
-    WorkKpiComponent
+    WorkKpiComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: "personal-website1" }),

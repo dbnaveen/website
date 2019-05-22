@@ -9,5 +9,9 @@ import { Component, OnInit, ViewEncapsulation } from "@angular/core";
 export class WorkKpiComponent implements OnInit {
   constructor() {}
 
+  openWorkModal() {
+    console.log("click work");
+  }
+
   ngOnInit() {}
 }
