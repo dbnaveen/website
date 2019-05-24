@@ -165,7 +165,7 @@ export class MyWorksComponent implements OnInit {
   }
 
   closeWorkModal(e) {
-    console.log(e);
+    this.closeModal = !this.closeModal;
   }
 
   ngOnInit() {}

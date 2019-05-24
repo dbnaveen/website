@@ -3,7 +3,8 @@ import {
   OnInit,
   ViewEncapsulation,
   Output,
-  EventEmitter
+  EventEmitter,
+  Input
 } from "@angular/core";
 
 @Component({
@@ -13,6 +14,7 @@ import {
   encapsulation: ViewEncapsulation.None
 })
 export class ModalComponent implements OnInit {
+  @Input() ModalOpenClose: any;
   @Output() closeEvent = new EventEmitter<any>();
 
   constructor() {}
@@ -21,5 +23,11 @@ export class ModalComponent implements OnInit {
     this.closeEvent.emit("close");
   }
 
-  ngOnInit() {}
+  ngOnChanges() {
+    console.log("Modal", this.ModalOpenClose);
+  }
+
+  ngOnInit() {
+    // console.log("Modal", this.ModalOpenClose);
+  }
 }

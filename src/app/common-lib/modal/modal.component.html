@@ -1,9 +1,19 @@
-<div class="Modal">
+<div
+  class="Modal Modal-Effect"
+  [ngClass]="{ 'Modal-Show': ModalOpenClose === false }"
+>
   <div class="Modal-Background"></div>
   <div class="Modal-Close" (click)="closeModal()">
     <i class="fa fa-times"></i>
   </div>
   <div class="Modal-Box">
-    Content
+    <div class="Modal-Content">
+      <div class="col-sm-5 col-lg-5 Modal-Content-First">
+        <app-work-desc></app-work-desc>
+      </div>
+      <div class="col-sm-7 col-lg-7 Modal-Content-Second">
+        Second Half
+      </div>
+    </div>
   </div>
 </div>
