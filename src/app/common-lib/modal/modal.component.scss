@@ -52,6 +52,14 @@
     &-Second {
       display: flex;
       background-color: $slate;
+
+      app-work-snapshot {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        padding: 1rem;
+        overflow-y: auto;
+      }
     }
   }
 

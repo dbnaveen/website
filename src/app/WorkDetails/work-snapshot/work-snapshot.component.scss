@@ -1,0 +1,51 @@
+@import "../../../sass/mixins";
+
+.WorkSnapshot {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  flex-direction: column;
+  align-items: center;
+}
+
+// .ngx-gallery-icon .ngx-gallery-icon-content {
+//   color: $sandy-brown;
+//   font-size: 24px;
+// }
+.ngx-gallery-image-size-cover .ngx-gallery-image {
+  background-size: contain !important;
+}
+
+.ngx-gallery-layout {
+  align-items: center;
+
+  ngx-gallery-image {
+    width: 85% !important;
+
+    .ngx-gallery-image-wrapper {
+      .ngx-gallery-image {
+        border: 0.85px solid $dark;
+        border-radius: 5px;
+      }
+    }
+  }
+
+  .ngx-gallery-arrow-right .ngx-gallery-arrow {
+    right: -30px !important;
+    font-size: 12px;
+    color: $sandy-brown;
+  }
+  .ngx-gallery-arrow-left .ngx-gallery-arrow {
+    left: -30px !important;
+    font-size: 12px;
+    color: $sandy-brown;
+  }
+
+  .ngx-gallery-thumbnail-size-cover
+    .ngx-gallery-thumbnails
+    .ngx-gallery-thumbnail {
+    border: 1px solid $dark;
+    border-radius: 5px;
+  }
+}

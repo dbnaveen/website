@@ -4,11 +4,29 @@
       <span>Introduction</span>
     </div>
     <div class="WorkDetails-Value">
-      <span [innerHtml]="workDetails.introduction">
-        <!-- Identify non-working money to reinvest and your growth strategy. It's a
-        way to identify cost savings and reinvest that money for growth,
-        profitability, sustainability and trust. -->
-      </span>
+      <span [innerHtml]="workDetails.introduction"> </span>
+    </div>
+  </div>
+
+  <div class="WorkDetails-KeyValue">
+    <div class="WorkDetails-Key">
+      <span>Technologies Used</span>
+    </div>
+    <div class="WorkDetails-Value">
+      <span
+        class="WorkDetails-Technologies"
+        *ngFor="let i of workDetails.technologies"
+        >{{ i }}</span
+      >
+    </div>
+  </div>
+
+  <div class="WorkDetails-KeyValue">
+    <div class="WorkDetails-Key">
+      <span>Time Period</span>
+    </div>
+    <div class="WorkDetails-Value">
+      <span [innerHtml]="workDetails.timePeriod"> </span>
     </div>
   </div>
 </div>

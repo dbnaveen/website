@@ -16,7 +16,13 @@ export class WorkDescComponent implements OnInit {
         "Identify non-working money to reinvest and your growth strategy. It's a" +
         "way to identify cost savings and reinvest that money for growth," +
         "profitability, sustainability and trust.,",
-      technologies: ["a", "b", "c"],
+      technologies: [
+        "ReactJS",
+        "Bootstrap 4",
+        "SCSS",
+        "Highcharts",
+        "Angular Material"
+      ],
       timePeriod: "April, 2019 - Present"
     };
     this.workDetails = obj;

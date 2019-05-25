@@ -26,6 +26,7 @@ import { HexagonComponent } from './common-lib/svg/hexagon/hexagon.component';
 import { WorkKpiComponent } from './common-lib/work-kpi/work-kpi.component';
 import { ModalComponent } from './common-lib/modal/modal.component';
 import { WorkDescComponent } from './WorkDetails/work-desc/work-desc.component';
+import { WorkSnapshotComponent } from './WorkDetails/work-snapshot/work-snapshot.component';
 
 const appRoutes: Routes = [];
 
@@ -47,7 +48,8 @@ const appRoutes: Routes = [];
     HexagonComponent,
     WorkKpiComponent,
     ModalComponent,
-    WorkDescComponent
+    WorkDescComponent,
+    WorkSnapshotComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: "personal-website1" }),
