@@ -24,7 +24,7 @@ export class ModalComponent implements OnInit {
   }
 
   ngOnChanges() {
-    console.log("Modal", this.ModalOpenClose);
+    // console.log("Modal", this.ModalOpenClose);
   }
 
   ngOnInit() {

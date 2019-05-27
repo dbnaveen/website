@@ -12,21 +12,28 @@
       </div>
     </div>
 
-    <div class="container p-0 my-work">
+    <div class="container my-work" *ngFor="let i of worksList; index as index">
       <div class="my-work-header header-no">
-        <span class="number">01</span> <span class="text">ACCENTURE AI</span>
+        <span class="number">0{{ index + 1 }}</span>
+        <span class="text">{{ i.key }}</span>
       </div>
 
       <div class="row my-work-body">
-        <div class="col-md-6 col-lg-4 my-work-kpi wow fadeInUp">
+        <div
+          class="col-md-6 col-lg-4 my-work-kpi wow fadeInUp"
+          *ngFor="let j of i['values']"
+        >
+          <app-work-kpi
+            (closeEvent)="closeWorkModal($event)"
+            [data]="j"
+          ></app-work-kpi>
+        </div>
+        <!-- <div class="col-md-6 col-lg-4 my-work-kpi wow fadeInUp">
           <app-work-kpi (closeEvent)="closeWorkModal($event)"></app-work-kpi>
         </div>
         <div class="col-md-6 col-lg-4 my-work-kpi wow fadeInUp">
           <app-work-kpi (closeEvent)="closeWorkModal($event)"></app-work-kpi>
-        </div>
-        <div class="col-md-6 col-lg-4 my-work-kpi wow fadeInUp">
-          <app-work-kpi (closeEvent)="closeWorkModal($event)"></app-work-kpi>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -35,6 +42,5 @@
     (closeEvent)="closeWorkModal($event)"
     [ModalOpenClose]="closeModal"
   >
-    <!-- *ngIf="!closeModal" -->
   </app-modal>
 </div>

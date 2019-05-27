@@ -20,13 +20,12 @@ import { ResumeComponent } from "./resume/resume.component";
 import { TestimonialsComponent } from "./testimonials/testimonials.component";
 import { InterestsComponent } from "./interests/interests.component";
 import { FooterComponent } from "./footer/footer.component";
-import { DialogComponent } from "./shared/dialog/dialog.component";
 import { ConnectComponent } from "./connect/connect.component";
-import { HexagonComponent } from './common-lib/svg/hexagon/hexagon.component';
-import { WorkKpiComponent } from './common-lib/work-kpi/work-kpi.component';
-import { ModalComponent } from './common-lib/modal/modal.component';
-import { WorkDescComponent } from './WorkDetails/work-desc/work-desc.component';
-import { WorkSnapshotComponent } from './WorkDetails/work-snapshot/work-snapshot.component';
+import { HexagonComponent } from "./common-lib/svg/hexagon/hexagon.component";
+import { WorkKpiComponent } from "./common-lib/work-kpi/work-kpi.component";
+import { ModalComponent } from "./common-lib/modal/modal.component";
+import { WorkDescComponent } from "./WorkDetails/work-desc/work-desc.component";
+import { WorkSnapshotComponent } from "./WorkDetails/work-snapshot/work-snapshot.component";
 
 const appRoutes: Routes = [];
 
@@ -43,7 +42,6 @@ const appRoutes: Routes = [];
     TestimonialsComponent,
     InterestsComponent,
     FooterComponent,
-    DialogComponent,
     ConnectComponent,
     HexagonComponent,
     WorkKpiComponent,
@@ -63,7 +61,7 @@ const appRoutes: Routes = [];
     ReactiveFormsModule,
     HttpClientModule
   ],
-  entryComponents: [DialogComponent],
+  entryComponents: [],
   providers: [],
   bootstrap: [AppComponent]
 })

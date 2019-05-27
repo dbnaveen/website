@@ -3,22 +3,18 @@
     <div class="line-icon">
       <div class="line"></div>
       <div class="icon">
-        <i class="fas fa-rupee-sign"></i>
+        <i [ngClass]="data.icon"></i>
       </div>
       <div class="line"></div>
     </div>
     <div class="title">
-      Zero Quartile
+      {{ data.name }}
     </div>
   </div>
   <div class="kpi-container-body">
     <div class="triangle">
       <i class="fa fa-expand" (click)="openWorkModal()"></i>
     </div>
-    <span class="desc">
-      Identify the non-working money to reinvest and your growth strategy. It's
-      a way to identify cost savings and reinvest that money for growth,
-      profitability, sustainability and trust.
-    </span>
+    <span class="desc" [innerHtml]="data.desc"> </span>
   </div>
 </div>

@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from "@angular/core";
+import { HostListener } from "@angular/core";
 import {
   NgxGalleryOptions,
   NgxGalleryImage,
@@ -14,8 +15,18 @@ import {
 export class WorkSnapshotComponent implements OnInit {
   galleryOptions: NgxGalleryOptions[];
   galleryImages: NgxGalleryImage[];
+  screenWidth: boolean = false;
 
-  constructor() {}
+  constructor() {
+    this.getScreenSize();
+  }
+
+  @HostListener("window:resize", ["$event"])
+  getScreenSize(event?) {
+    this.screenWidth = window.innerWidth >= 767;
+    this.galleryImages;
+    this.loadSnapshots();
+  }
 
   loadSnapshots() {
     this.galleryImages = [];
@@ -56,9 +67,9 @@ export class WorkSnapshotComponent implements OnInit {
         // imagePercent: 60,
         // thumbnailsPercent: 20,
         // previewForceFullscreen: false,
+        image: this.screenWidth, //for large screen show, hide for mobile devices
         width: "85%",
         height: "90%",
-        // thumbnailsColumns: 4,
         imageSwipe: true,
         previewSwipe: true,
         thumbnailsMoveSize: 4,
@@ -84,7 +95,7 @@ export class WorkSnapshotComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.galleryImages;
-    this.loadSnapshots();
+    // this.galleryImages;
+    // this.loadSnapshots();
   }
 }

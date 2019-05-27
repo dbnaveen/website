@@ -1,10 +1,5 @@
-import {
-  Component,
-  OnInit,
-  ViewEncapsulation,
-  Output,
-  EventEmitter
-} from "@angular/core";
+import { Component, OnInit, ViewEncapsulation, Output } from "@angular/core";
+import { Input, EventEmitter } from "@angular/core";
 
 @Component({
   selector: "app-work-kpi",
@@ -13,6 +8,7 @@ import {
   encapsulation: ViewEncapsulation.None
 })
 export class WorkKpiComponent implements OnInit {
+  @Input() data: any;
   @Output() closeEvent = new EventEmitter<any>();
 
   constructor() {}
@@ -22,5 +18,7 @@ export class WorkKpiComponent implements OnInit {
     this.closeEvent.emit("close");
   }
 
-  ngOnInit() {}
+  ngOnInit() {
+    console.log(this.data);
+  }
 }
