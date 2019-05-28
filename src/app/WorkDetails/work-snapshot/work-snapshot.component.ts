@@ -1,10 +1,10 @@
 import { Component, OnInit, ViewEncapsulation } from "@angular/core";
-import { HostListener } from "@angular/core";
-import {
-  NgxGalleryOptions,
-  NgxGalleryImage,
-  NgxGalleryAnimation
-} from "ngx-gallery";
+import { HostListener, Input } from "@angular/core";
+import { NgxGalleryOptions, NgxGalleryImage } from "ngx-gallery";
+import { NgxGalleryAnimation } from "ngx-gallery";
+
+declare var require: any;
+const workSnapshotJson = require("../../../assets/json/work-snapshot.json");
 
 @Component({
   selector: "app-work-snapshot",
@@ -13,6 +13,7 @@ import {
   encapsulation: ViewEncapsulation.None
 })
 export class WorkSnapshotComponent implements OnInit {
+  @Input() data: any;
   galleryOptions: NgxGalleryOptions[];
   galleryImages: NgxGalleryImage[];
   screenWidth: boolean = false;
@@ -21,53 +22,17 @@ export class WorkSnapshotComponent implements OnInit {
     this.getScreenSize();
   }
 
-  @HostListener("window:resize", ["$event"])
-  getScreenSize(event?) {
-    this.screenWidth = window.innerWidth >= 767;
-    this.galleryImages;
-    this.loadSnapshots();
-  }
-
-  loadSnapshots() {
-    this.galleryImages = [];
-    const data = [
-      "IOT/login.png",
-      "IOT/dashboard.png",
-      "IOT/asset-list.png",
-      "IOT/asset-list-map.png",
-      "IOT/asset-details.png",
-      "IOT/sensor-data.png",
-      "IOT/utilization-30.png",
-      "IOT/health-summary-30.png",
-      "IOT/loc-track-last_known.png",
-      "IOT/loc-track-range.png",
-      "IOT/select-module.png",
-      "IOT/models-list.png",
-      "IOT/modal.png",
-      "IOT/geo-fence.png",
-      "IOT/asset-register.png",
-      "IOT/asset-register-manual.png",
-      "IOT/asset-register-upload.png"
-    ];
-
-    data.forEach(val => {
-      this.galleryImages.push({
-        small: "assets/img/works/" + val,
-        medium: "assets/img/works/" + val,
-        big: "assets/img/works/" + val
-      });
-    });
-
+  setGalleryOptions() {
     this.galleryOptions = [
       {
         // "previewFullscreen": true,
-        imageArrowsAutoHide: false,
-        // "thumbnailsArrowsAutoHide": false,
-        // "preview": true,
         // imagePercent: 60,
         // thumbnailsPercent: 20,
         // previewForceFullscreen: false,
-        image: this.screenWidth, //for large screen show, hide for mobile devices
+        // "thumbnailsArrowsAutoHide": false,
+        imageArrowsAutoHide: false,
+        preview: false,
+        image: this.screenWidth,
         width: "85%",
         height: "90%",
         imageSwipe: true,
@@ -94,8 +59,36 @@ export class WorkSnapshotComponent implements OnInit {
     ];
   }
 
-  ngOnInit() {
-    // this.galleryImages;
-    // this.loadSnapshots();
+  @HostListener("window:resize", ["$event"])
+  getScreenSize(event?) {
+    this.screenWidth = window.innerWidth >= 767;
+    this.galleryImages;
+    this.getWorkSnapshot(this.data, workSnapshotJson);
   }
+
+  loadSnapshots(key, list) {
+    this.galleryImages = [];
+    for (var i = 0, j = list.length; i < j; i++) {
+      this.galleryImages.push({
+        small: "assets/img/works/" + key + "/" + list[i],
+        medium: "assets/img/works/" + key + "/" + list[i],
+        big: "assets/img/works/" + key + "/" + list[i]
+      });
+    }
+    this.setGalleryOptions();
+  }
+
+  getWorkSnapshot(data, obj) {
+    if (data !== undefined) {
+      let key = data["key"];
+      let list = obj[key];
+      this.loadSnapshots(key, list);
+    }
+  }
+
+  ngOnChanges() {
+    this.getWorkSnapshot(this.data, workSnapshotJson);
+  }
+
+  ngOnInit() {}
 }

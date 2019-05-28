@@ -9,6 +9,18 @@
   align-items: baseline;
   justify-content: space-evenly;
 
+  &-Title {
+    font-family: "Kameron", serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: $slate;
+    display: flex;
+    width: inherit;
+    justify-content: center;
+    position: absolute;
+    top: 5px;
+  }
+
   &-KeyValue {
     all: inherit;
     height: auto;
@@ -16,9 +28,9 @@
 
   &-Key {
     font-family: "Kameron", serif;
-    font-weight: bold;
     text-transform: uppercase;
     font-size: 12px;
+    font-weight: bold;
     color: $dark;
     position: relative;
   }
@@ -27,9 +39,9 @@
     font-family: "Kameron", serif;
     text-align: justify;
     font-size: 14px;
+    font-weight: bold;
     color: $slate;
     line-height: 25px;
-    font-weight: bold;
     padding-top: 0.75rem;
   }
 
@@ -90,8 +102,8 @@
     &-Value {
       text-align: initial;
       font-size: 9px;
-      line-height: normal;
       font-weight: bold;
+      line-height: normal;
     }
 
     &-Technologies {

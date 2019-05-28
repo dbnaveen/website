@@ -3,9 +3,10 @@
     "key": "Accenture AI",
     "values": [
       {
-        "icon": "fa fa-dollar-sign",
+        "key": "zbx",
         "name": "Zero Quartile",
-        "desc": "Identify the non-working money to reinvest and your growth strategy. It's a way to identify cost savings and reinvest that money for growth, profitability, sustainability and trust."
+        "desc": "Identify the non-working money to reinvest and your growth strategy. It's a way to identify cost savings and reinvest that money for growth, profitability, sustainability and trust.",
+        "icon": "fa fa-dollar-sign"
       }
     ]
   },
@@ -13,14 +14,16 @@
     "key": "Kogentix Inc.",
     "values": [
       {
-        "icon": "fa fa-wifi",
+        "key": "iot",
         "name": "IOT",
-        "desc": "An Asset monitoring application which tracks the asset behaviour and tracks location of the asset and helps to take right decisions."
+        "desc": "An Asset monitoring application which tracks the asset behaviour and tracks location of the asset and helps to take right decisions.",
+        "icon": "fa fa-wifi"
       },
       {
-        "icon": "fa fa-coins",
+        "key": "amp",
         "name": "AMP",
-        "desc": "Automated Machine Learning Platform (AMP) - helps organizations build AI applications that learn business, make timely recommendations to improve KPI's."
+        "desc": "Automated Machine Learning Platform (AMP) - helps organizations build AI applications that learn business, make timely recommendations to improve KPI's.",
+        "icon": "fa fa-coins"
       }
     ]
   },
@@ -28,19 +31,22 @@
     "key": "Flutura Decision Science and Analytics",
     "values": [
       {
-        "icon": "fa fa-money-check-alt",
+        "key": "supplyChain",
         "name": "Supply Chain Forensics",
-        "desc": "Tool that allows you to manage all components and finished goods part numnbers."
+        "desc": "Tool that allows you to manage all components and finished goods part numnbers.",
+        "icon": "fa fa-money-check-alt"
       },
       {
-        "icon": "fa fa-solar-panel",
-        "name": "Solar Operations Watch",
-        "desc": "Developed an analytical product for the 'Internet of Things' infrastructure which aids the end user ensure the system will not run out of energy."
-      },
-      {
-        "icon": "fa fa-heartbeat",
+        "key": "assetHealthMonitor",
         "name": "Asset Health Monitor",
-        "desc": "Developed an analytical product for the 'Internet of Things' infrastructure which aids the end user ensure the system will not run out of energy."
+        "desc": "Developed an analytical product for the 'Internet of Things' infrastructure which aids the end user ensure the system will not run out of energy.",
+        "icon": "fa fa-heartbeat"
+      },
+      {
+        "key": "solarOperationsWatch",
+        "name": "Solar Operations Watch",
+        "desc": "Developed an analytical product for the 'Internet of Things' infrastructure which aids the end user ensure the system will not run out of energy.",
+        "icon": "fa fa-solar-panel"
       }
     ]
   }

@@ -1,0 +1,39 @@
+{
+  "zbx": [
+    "home.png",
+    "store-1.png",
+    "store-2.png",
+    "segment.png",
+    "segmentDetails.png"
+  ],
+  "iot": [
+    "login.png",
+    "dashboard.png",
+    "asset-list.png",
+    "asset-list-map.png",
+    "asset-details.png",
+    "sensor-data.png",
+    "utilization-30.png",
+    "health-summary-30.png",
+    "loc-track-last_known.png",
+    "loc-track-range.png",
+    "select-module.png",
+    "models-list.png",
+    "modal.png",
+    "geo-fence.png",
+    "asset-register.png",
+    "asset-register-manual.png",
+    "asset-register-upload.png"
+  ],
+  "amp": [
+    "rule1.png",
+    "rule2.png",
+    "new-rule-create.png",
+    "new-rule-options.png",
+    "preview-overview.png",
+    "preview-content.png",
+    "rule2.png",
+    "summary.png"
+  ],
+  "supplyChain": ["page1.png", "page2.png"]
+}

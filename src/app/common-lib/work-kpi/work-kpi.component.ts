@@ -13,12 +13,9 @@ export class WorkKpiComponent implements OnInit {
 
   constructor() {}
 
-  openWorkModal() {
-    console.log("click work");
-    this.closeEvent.emit("close");
+  openWorkModal(e) {
+    this.closeEvent.emit(e);
   }
 
-  ngOnInit() {
-    console.log(this.data);
-  }
+  ngOnInit() {}
 }

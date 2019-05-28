@@ -1,11 +1,5 @@
-import {
-  Component,
-  OnInit,
-  ViewEncapsulation,
-  Output,
-  EventEmitter,
-  Input
-} from "@angular/core";
+import { Component, OnInit, ViewEncapsulation, Output } from "@angular/core";
+import { EventEmitter, Input } from "@angular/core";
 
 @Component({
   selector: "app-modal",
@@ -15,6 +9,7 @@ import {
 })
 export class ModalComponent implements OnInit {
   @Input() ModalOpenClose: any;
+  @Input() workDesc: any;
   @Output() closeEvent = new EventEmitter<any>();
 
   constructor() {}
@@ -23,11 +18,5 @@ export class ModalComponent implements OnInit {
     this.closeEvent.emit("close");
   }
 
-  ngOnChanges() {
-    // console.log("Modal", this.ModalOpenClose);
-  }
-
-  ngOnInit() {
-    // console.log("Modal", this.ModalOpenClose);
-  }
+  ngOnInit() {}
 }

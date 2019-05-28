@@ -12,13 +12,18 @@ const workListJson = require("../../assets/json/works-list.json");
 export class MyWorksComponent implements OnInit {
   closeModal = true;
   worksList: any;
+  workDesc: any;
 
   constructor() {
     this.worksList = workListJson;
-    console.log(this.worksList);
+  }
+
+  setWorkDesc(data) {
+    this.workDesc = data;
   }
 
   closeWorkModal(e) {
+    this.setWorkDesc(e);
     this.closeModal = !this.closeModal;
   }
 

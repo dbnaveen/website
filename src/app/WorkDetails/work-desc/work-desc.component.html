@@ -1,10 +1,13 @@
-<div class="WorkDetails">
+<div class="WorkDetails" *ngIf="loaded">
+  <div class="WorkDetails-Title">
+    {{ workDetails.title }}
+  </div>
   <div class="WorkDetails-KeyValue">
     <div class="WorkDetails-Key">
       <span>Introduction</span>
     </div>
     <div class="WorkDetails-Value">
-      <span [innerHtml]="workDetails.introduction"> </span>
+      <span [innerHtml]="workDetails.shortDesc"> </span>
     </div>
   </div>
 

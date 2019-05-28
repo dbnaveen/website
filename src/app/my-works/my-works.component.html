@@ -28,19 +28,14 @@
             [data]="j"
           ></app-work-kpi>
         </div>
-        <!-- <div class="col-md-6 col-lg-4 my-work-kpi wow fadeInUp">
-          <app-work-kpi (closeEvent)="closeWorkModal($event)"></app-work-kpi>
-        </div>
-        <div class="col-md-6 col-lg-4 my-work-kpi wow fadeInUp">
-          <app-work-kpi (closeEvent)="closeWorkModal($event)"></app-work-kpi>
-        </div> -->
       </div>
     </div>
   </div>
 
   <app-modal
-    (closeEvent)="closeWorkModal($event)"
+    (closeEvent)="closeWorkModal(e)"
     [ModalOpenClose]="closeModal"
+    [workDesc]="workDesc"
   >
   </app-modal>
 </div>

@@ -1,4 +1,7 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, Input } from "@angular/core";
+
+declare var require: any;
+const workListJson = require("../../../assets/json/work-desc.json");
 
 @Component({
   selector: "app-work-desc",
@@ -6,33 +9,22 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./work-desc.component.scss"]
 })
 export class WorkDescComponent implements OnInit {
+  @Input() data: any;
   workDetails: any;
+  loaded: boolean = false;
 
   constructor() {}
 
-  getWorkDetails() {
-    let obj = {
-      introduction:
-        "Identify non-working money to reinvest and your growth strategy. It's a" +
-        "way to identify cost savings and reinvest that money for growth," +
-        "profitability, sustainability and trust.,",
-      technologies: [
-        "ReactJS",
-        "Bootstrap 4",
-        "SCSS",
-        "Highcharts",
-        "Angular Material"
-      ],
-      timePeriod: "April, 2019 - Present"
-    };
-    this.workDetails = obj;
+  getWorkDetails(data, obj) {
+    if (data !== undefined) {
+      this.workDetails = obj[data["key"]];
+      this.loaded = true;
+    }
   }
 
   ngOnChanges() {
-    this.getWorkDetails();
+    this.getWorkDetails(this.data, workListJson);
   }
 
-  ngOnInit() {
-    this.getWorkDetails();
-  }
+  ngOnInit() {}
 }
