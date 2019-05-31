@@ -5,7 +5,7 @@
       {
         "key": "zbx",
         "name": "Zero Quartile",
-        "desc": "Identify the non-working money to reinvest and your growth strategy. It's a way to identify cost savings and reinvest that money for growth, profitability, sustainability and trust.",
+        "desc": "An Expense Management application. It's a way to identify the expense drivers through the expense profile and ultimately identify the cost savings.",
         "icon": "fa fa-dollar-sign"
       }
     ]
@@ -16,7 +16,7 @@
       {
         "key": "iot",
         "name": "IOT",
-        "desc": "An Asset monitoring application which tracks the asset behaviour and tracks location of the asset and helps to take right decisions.",
+        "desc": "An Asset Management application. It tracks and manages asset and various behaviour of the asset.",
         "icon": "fa fa-wifi"
       },
       {

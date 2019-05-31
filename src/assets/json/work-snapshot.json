@@ -35,5 +35,23 @@
     "rule2.png",
     "summary.png"
   ],
-  "supplyChain": ["page1.png", "page2.png"]
+  "supplyChain": ["page1.png", "page2.png"],
+  "assetHealthMonitor": [
+    "home.png",
+    "homeDetails.png",
+    "homeDetailsFilter.png",
+    "overview.png",
+    "eda.png",
+    "advancedEda.png",
+    "siteVisit.png",
+    "reviewLog.png",
+    "createLog.png"
+  ],
+  "solarOperationsWatch": [
+    "overview.png",
+    "generation.png",
+    "consumption.png",
+    "storage1.png",
+    "storage2.png"
+  ]
 }

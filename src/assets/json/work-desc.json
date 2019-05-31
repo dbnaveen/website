@@ -1,20 +1,21 @@
 {
   "zbx": {
     "title": "Zero Quartile",
-    "shortDesc": "Identify non-working money to reinvest and your growth strategy. It's a way to identify cost savings and reinvest that money for growth, profitability, sustainability and trust.",
-    "technologies": [
-      "Angular 5",
-      "Bootstrap 4",
-      "SCSS",
-      "Highcharts",
-      "Angular Material"
-    ],
+    "shortDesc": "It's a way to cost management with the help of data visualization(charts) and helps to take right actions to reduce the expense by implementing policy changes, driving lower pricing through procurement, making appropriate changes to consumption etc. Zero quartile, will not only help you to move along the cost curve but enables you to completely redefine the cost curve.",
+    "technologies": ["React", "Bootstrap 4", "SCSS", "Highcharts", "D3.js"],
     "timePeriod": "April, 2019 - June, 2019"
   },
   "iot": {
     "title": "Asset Insight (IOT)",
-    "shortDesc": "An Asset Monitoring application which tracks asset movementBasically the sensor collects data from different parts of the asset like Engine, Battery etc andwe show the pictorial representation of the data for different reading.This helps the customer/user to take right decisions and easy to understand the behaviour of the asset andmonitor it.",
-    "technologies": ["Angular 5", "Bootstrap 4", "Angular Material", "SCSS"],
+    "shortDesc": "Tracks and manages all of the asset with this asset management application. Tells where the asset is located and helps to create geo-fence around the assets and monitor it. With the help of detailed report (charts) on various components like Battery Voltage, Battery Pressure, Engine Temperature etc helps you to take suitable actions if required.",
+    "technologies": [
+      "Angular 5",
+      "TypeScript",
+      "Bootstrap 4",
+      "Angular Material",
+      "SCSS",
+      "Highcharts"
+    ],
     "timePeriod": "December, 2018 - March, 2019"
   },
   "amp": {
@@ -26,7 +27,7 @@
   "supplyChain": {
     "title": "Supply Chain Management",
     "shortDesc": "Tool that allows you to manage all components and finished goods part numnbers.",
-    "technologies": ["JQuery", "DJango"],
+    "technologies": ["JQuery", "DJango", "HTML", "CSS"],
     "timePeriod": "Novermber, 2018 - May, 2018"
   },
   "assetHealthMonitor": {

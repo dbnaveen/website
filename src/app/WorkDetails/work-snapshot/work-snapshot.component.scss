@@ -18,21 +18,14 @@
 
   ngx-gallery-image {
     width: 85% !important;
-
-    .ngx-gallery-image-wrapper {
-      .ngx-gallery-image {
-        border: 1px solid $dark;
-        border-radius: 3px;
-      }
-    }
   }
 
   .ngx-gallery-arrow-right .ngx-gallery-arrow {
-    font-size: 12px;
+    font-size: 14px;
     color: $sandy-brown;
   }
   .ngx-gallery-arrow-left .ngx-gallery-arrow {
-    font-size: 12px;
+    font-size: 14px;
     color: $sandy-brown;
   }
 
@@ -67,5 +60,18 @@
   }
   .ngx-gallery-arrow-left .ngx-gallery-arrow {
     left: -25px !important;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  ngx-gallery {
+    height: 100% !important;
+  }
+
+  .ngx-gallery-arrow-right .ngx-gallery-arrow {
+    right: 0px !important;
+  }
+  .ngx-gallery-arrow-left .ngx-gallery-arrow {
+    left: 0px !important;
   }
 }
