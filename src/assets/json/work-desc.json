@@ -16,30 +16,51 @@
       "SCSS",
       "Highcharts"
     ],
-    "timePeriod": "December, 2018 - March, 2019"
+    "timePeriod": "April, 2018 - March, 2019"
   },
   "amp": {
     "title": "AMP",
     "shortDesc": "KOGENTIX Automated Machine Learning Platform (AMP) powers the design, experimentation, development and deployment enterprise-scale AI applications. ",
-    "technologies": ["Angular 1.6", "Angular Material", "SCSS"],
-    "timePeriod": "June, 2018 - December, 2018"
+    "technologies": ["Angular 1.6", "Angular Material", "SCSS", "Bootstrap 4"],
+    "timePeriod": "June, 2017 - March, 2018"
   },
   "supplyChain": {
-    "title": "Supply Chain Management",
-    "shortDesc": "Tool that allows you to manage all components and finished goods part numnbers.",
-    "technologies": ["JQuery", "DJango", "HTML", "CSS"],
-    "timePeriod": "Novermber, 2018 - May, 2018"
+    "title": "Supply Chain Forensics",
+    "shortDesc": "Only by managing part can we gain cntrol and a deep understanding of what makes our value stream work and more important, what makes our value stream not work. The goal is to use PFEP to develop an inventory plan throughout your value stream.",
+    "technologies": [
+      "JQuery",
+      "DJango",
+      "AJAX",
+      "Bootstrap",
+      "HTML 5",
+      "CSS 3"
+    ],
+    "timePeriod": "Novermber, 2016 - May, 2017"
   },
   "assetHealthMonitor": {
     "title": "Asset Health Monitor",
-    "shortDesc": "Developed an analytical product for the 'Internet of Things' infrastructure which aids the end user ensure the system will not run out of energy.",
-    "technologies": ["JQuery", "DJango"],
-    "timePeriod": "April, 2018 - October, 2018"
+    "shortDesc": "The application provides instant insight to issues that need immediate attention for all components in the solar panel ecosystem. The application studies the generation, consumption patterns, operational parameters and ambient conditions to create alerts that can help in outliving a disaster.",
+    "technologies": [
+      "JQuery",
+      "DJango",
+      "AJAX",
+      "Bootstrap",
+      "HTML 5",
+      "CSS 3"
+    ],
+    "timePeriod": "April, 2016 - October, 2016"
   },
   "solarOperationsWatch": {
     "title": "Solar Operations Watch",
-    "shortDesc": "Solar Operations Watch an application built for the clien-Leading Lighting and Energy solutions provider. Developed an analytical product for the Internet of Things infrastructure which aids the end user ensure thatthe system will not run out of energy",
-    "technologies": ["JQuery", "DJango"],
-    "timePeriod": "December, 2017 - March, 2018"
+    "shortDesc": "Solar Operations Watch an application built for the clien-Leading Lighting and Energy solutions provider. Developed an analytical product for the Internet of Things infrastructure which aids the end user ensure that the system will not run out of energy",
+    "technologies": [
+      "JQuery",
+      "DJango",
+      "AJAX",
+      "Bootstrap",
+      "HTML 5",
+      "CSS 3"
+    ],
+    "timePeriod": "December, 2015 - March, 2016"
   }
 }

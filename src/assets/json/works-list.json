@@ -33,13 +33,13 @@
       {
         "key": "supplyChain",
         "name": "Supply Chain Forensics",
-        "desc": "Tool that allows you to manage all components and finished goods part numnbers.",
+        "desc": "Tool that allows you to manage all components and finished goods part numbers.",
         "icon": "fa fa-money-check-alt"
       },
       {
         "key": "assetHealthMonitor",
         "name": "Asset Health Monitor",
-        "desc": "Developed an analytical product for the 'Internet of Things' infrastructure which aids the end user ensure the system will not run out of energy.",
+        "desc": "The application provides instant insight to issues that need immediate attention for all components in the solar panel ecosystem.",
         "icon": "fa fa-heartbeat"
       },
       {

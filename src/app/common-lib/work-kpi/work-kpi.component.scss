@@ -87,7 +87,7 @@
 
     .triangle i:hover {
       cursor: pointer;
-      color: #777777;
+      color: $warm-grey;
       -webkit-animation-name: hvr-icon-pop;
       animation-name: hvr-icon-pop;
       animation-duration: 0.3s;

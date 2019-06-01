@@ -6,7 +6,12 @@
   justify-content: center !important;
   flex-direction: column !important;
   margin: 0px !important;
-  padding: 1rem !important;
+  padding: 0px !important;
+
+  .services {
+    margin: 0px !important;
+    padding: 1rem !important;
+  }
 }
 
 .my-work {
