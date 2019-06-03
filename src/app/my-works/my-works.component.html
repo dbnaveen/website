@@ -33,7 +33,7 @@
   </div>
 
   <app-modal
-    (closeEvent)="closeWorkModal(e)"
+    (closeEvent)="closeWorkModal($event)"
     [ModalOpenClose]="closeModal"
     [workDesc]="workDesc"
   >

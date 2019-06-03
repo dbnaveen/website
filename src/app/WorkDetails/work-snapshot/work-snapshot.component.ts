@@ -79,7 +79,7 @@ export class WorkSnapshotComponent implements OnInit {
   }
 
   getWorkSnapshot(data, obj) {
-    if (data !== undefined) {
+    if (data !== undefined && data !== "close") {
       let key = data["key"];
       let list = obj[key];
       this.loadSnapshots(key, list);

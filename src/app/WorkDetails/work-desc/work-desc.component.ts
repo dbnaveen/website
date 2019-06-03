@@ -16,7 +16,7 @@ export class WorkDescComponent implements OnInit {
   constructor() {}
 
   getWorkDetails(data, obj) {
-    if (data !== undefined) {
+    if (data !== undefined && data !== "close") {
       this.workDetails = obj[data["key"]];
       this.loaded = true;
     }
