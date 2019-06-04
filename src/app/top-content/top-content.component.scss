@@ -1,83 +1,91 @@
-@import '../../sass/mixins';
+@import "../../sass/mixins";
 
 .top-content .text {
-    color: $dark-grey-blue;
-    font-weight: 400;
-    font-size: $f-16;
+  color: $dark-grey-blue;
+  font-weight: 400;
+  font-size: $f-16;
 }
 .top-content .text .title {
-    color: $slate;
-    font-weight: bold;
-    font-size: 42px;
-    font-family: 'Kameron', serif;
-    margin: 15px 0px;
+  color: $slate;
+  font-weight: bold;
+  font-size: 42px;
+  font-family: "Kameron", serif;
+  margin: 15px 0px;
 }
 
 .top-content {
-    .intro {
-        display: flex;
-    }
-    .title .typing {
-        overflow: hidden; /* Ensures the content is not revealed until the animation */
-        border-right: .07em solid $sandy-brown; /* The typwriter cursor */
-        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-        animation: blink-caret 0.6s step-end infinite;
-    }
+  .intro {
+    display: flex;
+  }
+  .title .typing {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 0.08em solid $sandy-brown; /* The typwriter cursor */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    border-color: $slate;
+    border-right-width: 5px;
+    padding-right: 5px;
+    // animation: blink-caret 0.6s step-end infinite;
+  }
 }
 
 .mat-button-wrapper {
-    display: -webkit-box!important;
-    display: -ms-flexbox!important;
-    display: flex!important;
-    -webkit-box-align: center!important;
-    -ms-flex-align: center!important;
-    align-items: center!important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center !important;
+  -ms-flex-align: center !important;
+  align-items: center !important;
 }
 
 .downloadMyCV {
-    background-color: transparent;
-    border-color: $sandy-brown;
-    font-size: $f-14;
-    border-radius: 100px;
-    padding: 5px 15px;
-    a {
-        color: $sandy-brown;
-        color: #a27f41;
-    }
-    i {
-        padding-right: 7px;
-    }
+  background-color: transparent;
+  border-color: $sandy-brown;
+  font-size: $f-14;
+  border-radius: 100px;
+  padding: 5px 15px;
+  a {
+    color: $sandy-brown;
+    color: #a27f41;
+  }
+  i {
+    padding-right: 7px;
+  }
 }
 
 .downloadMyCV:focus {
-    box-shadow: none !important;
+  box-shadow: none !important;
 }
 
 .downloadMyCV:active {
-    color: $beige !important;
-    background-color: $sandy-brown !important;
-    border-color: transparent !important;
+  color: $beige !important;
+  background-color: $sandy-brown !important;
+  border-color: transparent !important;
 }
 
 .downloadMyCV:hover {
-    background-color: $sandy-brown;
-    border-color: transparent;
-    a {
-        color: $beige;
-    }
+  background-color: $sandy-brown;
+  border-color: transparent;
+  a {
+    color: $beige;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-    .top-content .text .title {
-        font-size: 24px;
-        font-weight: bold;
-    }
-    .top-content .text {
-        font-size: $f-14;
-    }
+  .top-content .text .title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .top-content .text {
+    font-size: $f-14;
+  }
 }
 
 @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: $slate; }
+  from,
+  to {
+    border-color: transparent;
   }
+  50% {
+    border-color: $slate;
+  }
+}
