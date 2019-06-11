@@ -63,8 +63,8 @@
   text-align: left;
 
   .year_icon {
-    width: 25px;
-    height: 25px;
+    width: 23px;
+    height: 23px;
   }
 
   .fa-caret-right {
@@ -120,6 +120,11 @@
     .key {
       color: $dark;
       font-size: $f-14;
+
+      .address_icon {
+        width: 15px;
+        margin-right: 1rem;
+      }
 
       i {
         color: $warm-grey;
