@@ -2,13 +2,16 @@
   <div class="container">
     <div class="row">
       <div class="col-md-9 offset-md-2 p-0 text">
-        <div class="wow fadeInLeftBig intro">
+        <div
+          class="wow fadeInLeftBig intro"
+          [ngClass]="{ 'justify-content-center': screenWidth === false }"
+        >
           <h1 class="title lax" data-lax-preset_large="zoomInOut blurOut-2">
-            <span class="typing"></span>
+            <span class="typing" [hidden]="!screenWidth"></span>
+            <span [hidden]="screenWidth">
+              Curious Front-end Developer & Designer
+            </span>
           </h1>
-          <!-- <h1 class="title lax" data-lax-preset_large="zoomInOut blurOut-2">
-            Curious Front-end Developer & Designer
-          </h1> -->
         </div>
         <div class="description m-0 wow fadeInLeftBig">
           <p class="lax" data-lax-preset="zoomInOut blurOut-3">

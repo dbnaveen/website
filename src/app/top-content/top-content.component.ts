@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from "@angular/core";
+import { HostListener } from "@angular/core";
 import { Meta } from "@angular/platform-browser";
 
 @Component({
@@ -8,6 +9,12 @@ import { Meta } from "@angular/platform-browser";
   encapsulation: ViewEncapsulation.None
 })
 export class TopContentComponent implements OnInit {
+  screenWidth: boolean = true;
+  @HostListener("window:resize", ["$event"])
+  getScreenSize(event?) {
+    this.screenWidth = window.innerWidth >= 1280;
+  }
+
   constructor(private meta: Meta) {
     this.meta.addTags([
       { name: "description", content: "Front End Developer and Designer" },
@@ -44,6 +51,7 @@ export class TopContentComponent implements OnInit {
   }
 
   ngOnInit() {
+    // this.getScreenSize();
     this.type();
   }
 }
