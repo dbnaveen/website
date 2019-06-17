@@ -6,9 +6,13 @@
           class="wow fadeInLeftBig intro"
           [ngClass]="{ 'justify-content-center': screenWidth === false }"
         >
-          <h1 class="title lax" data-lax-preset_large="zoomInOut blurOut-2">
-            <span class="typing" [hidden]="!screenWidth"></span>
-            <span [hidden]="screenWidth">
+          <h1 data-lax-preset_large="zoomInOut blurOut-2">
+            <span class="title lax typing" [hidden]="!screenWidth"></span>
+            <span
+              [hidden]="screenWidth"
+              class="title lax"
+              data-lax-preset="zoomInOut blurOut-2"
+            >
               Curious Front-end Developer & Designer
             </span>
           </h1>

@@ -11,7 +11,7 @@ import { Meta } from "@angular/platform-browser";
 export class TopContentComponent implements OnInit {
   screenWidth: boolean = true;
   @HostListener("window:resize", ["$event"])
-  getScreenSize(event?) {
+  getScreenSize() {
     this.screenWidth = window.innerWidth >= 1280;
   }
 
@@ -51,7 +51,7 @@ export class TopContentComponent implements OnInit {
   }
 
   ngOnInit() {
-    // this.getScreenSize();
+    this.screenWidth = window.innerWidth >= 1280;
     this.type();
   }
 }
