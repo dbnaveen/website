@@ -3,42 +3,70 @@
 .testimonials {
   position: relative;
   .tile {
-    background-color: $white !important;
-    padding: 2em 4em;
+    min-height: 250px;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+    .name {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(195,161,101,.75);
+      padding: 2rem;
+      border-top-left-radius: 3px;
+      border-bottom-left-radius: 3px;
+    }
+
+    .desc {
+      display: flex;
+      align-items: center;
+      background-color: $slate;
+      padding: 2rem;
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px;
+    }
   }
+
   .name {
     .title {
-      color: $black;
       font-weight: 500;
-      font-size: $f-16;
+      font-size: $f-14;
+      color: $slate;
     }
     .sub-title {
-      color: $warm-grey;
       font-weight: normal;
       font-size: $f-12;
+      color: $slate;
     }
   }
+
   .img img {
     border-radius: 50%;
     margin-bottom: 1em;
+    border: 1.5px solid $white;
   }
+
   .message {
-    color: $black;
     font-weight: normal;
     font-size: $f-14;
-  }
-  .message::before {
-    content: "\f10d";
-    font-family: "Font Awesome\ 5 Free";
-    font-weight: 900;
-    position: absolute;
     text-align: left;
-    font-size: 30px;
-    color: $pinkish-grey;
-    color: #0077b5;
-    top: 35px;
-    display: flex;
+    color: $white;
+    font-weight: 300;
   }
+
+  .message::before {
+    content: '“';
+    font-family: "Font Awesome\ 5 Free";
+    font-weight: 600;
+    position: absolute;
+    font-size: 2.5em;
+    display: flex;
+    left: 10px;
+    color: $beige;
+  }
+
   .more {
     color: $sandy-brown;
     font-weight: 500;
@@ -46,6 +74,7 @@
     text-decoration: underline;
     cursor: pointer;
   }
+
   .redirect {
     position: absolute;
     top: 35px;
@@ -73,16 +102,6 @@
   box-sizing: border-box;
 }
 
-.tile {
-  min-height: 200px;
-  background-color: #ccc;
-  background-size: cover !important;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
 .leftRs {
   position: absolute;
   margin: auto;
@@ -90,11 +109,11 @@
   bottom: 0;
   width: 40px;
   height: 50px;
-  left: 2%;
+  left:0%;
   border: none;
   background-color: transparent;
   cursor: pointer;
-  color: $sandy-brown;
+  color: $slate;
 }
 .leftRs:focus,
 .rightRs:focus {
@@ -112,7 +131,7 @@
   bottom: 0;
   width: 40px;
   height: 50px;
-  right: 2%;
+  right:0%;
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -134,20 +153,26 @@
   white-space: nowrap;
   overflow: auto;
   box-sizing: border-box;
+
+  li {
+    display: inline-block;
+    border-radius: 50%;
+    padding: 6px;
+    margin: 0 6px;
+    transition: 0.4s;
+    cursor: pointer;
+    background-color: $white;
+    border: 1px solid $sandy-brown;
+  }
+
+  li.active {
+    background: $slate;
+    border: 1px solid $slate;
+  }
 }
-.myPoint li {
-  display: inline-block;
-  border-radius: 50%;
-  padding: 5px;
-  margin: 0 3px;
-  transition-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
-  transition: 0.4s;
-  background: $pinkish-grey;
-  cursor: pointer;
-}
-.myPoint li.active {
-  background: $sandy-brown;
-  transform: scale(1.2);
+
+.rightRs, .leftRs {
+  display: none;
 }
 
 @media only screen and (max-width: 600px) {

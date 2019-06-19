@@ -36,6 +36,9 @@
     padding: 0px !important;
     position: relative;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2),0 0px 10px 0 rgba(0,0,0,0.15);
+    margin: 1px;
+    margin-bottom: 1rem;
+
     img{
         border-radius: 5px;
     }
@@ -51,4 +54,8 @@
         font-weight: bold;
         cursor: default;
     }
+}
+
+.image-box:last-child {
+    margin-bottom: 0px;
 }

@@ -4,6 +4,7 @@
   .bg-white {
     background-color: $white;
   }
+
   .experience-box-icon-header {
     .experience-icon {
       padding: 10px;
@@ -14,17 +15,21 @@
       border-radius: 50%;
       font-size: 18px;
     }
+
     small {
       font-size: 10px;
     }
+
     .active {
       background-color: $dark-aquamarine;
     }
+
     .title {
       color: $black;
       font-size: $f-14;
       font-weight: 500;
     }
+
     .date-range {
       color: $sandy-brown;
       font-size: $f-12;
@@ -40,20 +45,24 @@
       color: #fff;
       font-size: 18px;
     }
+
     .title {
       color: $black;
       font-size: $f-12;
       font-weight: 500;
     }
+
     .date-range {
       color: $sandy-brown;
       font-size: $f-12;
       font-weight: 500;
     }
+
     .location {
       font-size: $f-12;
       color: $warm-grey;
     }
+
     .divider {
       padding: 0px 5px 0px 5px;
       height: 50px;
