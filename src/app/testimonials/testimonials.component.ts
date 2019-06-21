@@ -33,7 +33,7 @@ export class TestimonialsComponent implements OnInit {
   carouselItems = testimonialsJson;
 
   handleLinkedInClick() {
-    window.open("https://www.linkedin.com/in/naveen-d-b-0310a693/", "_blank");
+    window.open("https://www.linkedin.com/in/naveendb92", "_blank");
   }
 
   ngOnInit() {
