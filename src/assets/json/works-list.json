@@ -3,6 +3,12 @@
     "key": "Accenture AI",
     "values": [
       {
+        "key": "Compassionate_HR",
+        "name": "Compassionate HR",
+        "desc": "A simple website built for the HR team to understand the situation where compassion is needed & the responsibilities in those situations.",
+        "icon": "fab fa-chrome"
+      },
+      {
         "key": "zbx",
         "name": "Zero Quartile",
         "desc": "An Expense Management application. It's a way to identify the expense drivers through the expense profile and ultimately identify the cost savings.",

@@ -17,6 +17,7 @@ export class WorkSnapshotComponent implements OnInit {
   galleryOptions: NgxGalleryOptions[];
   galleryImages: NgxGalleryImage[];
   screenWidth: boolean = false;
+  credits: any;
 
   constructor() {
     this.getScreenSize();
@@ -68,12 +69,17 @@ export class WorkSnapshotComponent implements OnInit {
 
   loadSnapshots(key, list) {
     this.galleryImages = [];
+    this.credits = {};
     for (var i = 0, j = list.length; i < j; i++) {
-      this.galleryImages.push({
-        small: "assets/img/works/" + key + "/" + list[i],
-        medium: "assets/img/works/" + key + "/" + list[i],
-        big: "assets/img/works/" + key + "/" + list[i]
-      });
+      if (typeof list[i] !== "object") {
+        this.galleryImages.push({
+          small: "assets/img/works/" + key + "/" + list[i],
+          medium: "assets/img/works/" + key + "/" + list[i],
+          big: "assets/img/works/" + key + "/" + list[i]
+        });
+      } else {
+        this.credits = list[i];
+      }
     }
     this.setGalleryOptions();
   }
@@ -82,7 +88,9 @@ export class WorkSnapshotComponent implements OnInit {
     if (data !== undefined && data !== "close") {
       let key = data["key"];
       let list = obj[key];
-      this.loadSnapshots(key, list);
+      if (list !== undefined) {
+        this.loadSnapshots(key, list);
+      }
     }
   }
 

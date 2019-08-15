@@ -1,4 +1,10 @@
 {
+  "Compassionate_HR": {
+    "title": "Compassionate HR",
+    "shortDesc": "A Website built for the HR Professional's to take survey's/assestment's and follow some guidelines with help of short video's.",
+    "technologies": ["jQuery", "HTML 5", "SCSS", "Rellax (animation)"],
+    "timePeriod": "July, 2019 - July, 2019"
+  },
   "zbx": {
     "title": "Zero Quartile",
     "shortDesc": "It's a way to cost management with the help of data visualization(charts) and helps to take right actions to reduce the expense by implementing policy changes, driving lower pricing through procurement, making appropriate changes to consumption etc. Zero quartile, will not only help you to move along the cost curve but enables you to completely redefine the cost curve.",

@@ -1,33 +1,26 @@
-<div class="top-content" id="top-content">
+<div class="top-content" id="top-content" #topContent>
   <div class="container">
     <div class="row">
-      <div class="col-md-9 offset-md-2 p-0 text">
+      <div class="col-md-9 offset-md-2 p-0 text" #content>
         <div
-          class="wow fadeInLeftBig intro"
+          class="intro"
           [ngClass]="{ 'justify-content-center': screenWidth === false }"
         >
-          <h1 data-lax-preset_large="zoomInOut blurOut-2">
-            <span class="title lax typing" [hidden]="!screenWidth"></span>
-            <span
-              [hidden]="screenWidth"
-              class="title lax"
-              data-lax-preset="zoomInOut blurOut-2"
-            >
+          <h1>
+            <!-- <span class="title typing" [hidden]="!screenWidth"></span> -->
+            <span class="title">
               Curious Front-end Developer & Designer
             </span>
           </h1>
         </div>
-        <div class="description m-0 wow fadeInLeftBig">
-          <p class="lax" data-lax-preset="zoomInOut blurOut-3">
+        <div class="description m-0">
+          <p>
             Based in Bangalore, India.
           </p>
         </div>
         <div class="top-big-link wow fadeInUp d-flex justify-content-center">
-          <button
-            class="btn btn-primary downloadMyCV lax"
-            data-lax-preset="blurOut-15"
-          >
-            <a href="/assets/cv.pdf" target="_blank">
+          <button class="btn btn-primary downloadMyCV">
+            <a href="assets/cv.pdf" target="_blank">
               <i class="fas fa-download"></i> Download CV
             </a>
           </button>

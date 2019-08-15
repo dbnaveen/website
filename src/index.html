@@ -10,14 +10,14 @@
     <link rel="alternate" hreflang="en" href="http://www.naveendb.com/" />
     <base href="/" />
 
-    <!-- CSS -->
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kameron" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
@@ -58,21 +58,6 @@
     <!-- <script src="assets/js/retina-1.1.0.min.js"></script> -->
     <script src="assets/js/waypoints.min.js"></script>
     <script src="assets/js/scripts.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script>
-      window.onload = function() {
-        lax.setup({
-          breakpoints: { small: 0, large: 376 }
-        });
-
-        const updateLax = () => {
-          lax.update(window.scrollY);
-          window.requestAnimationFrame(updateLax);
-        };
-
-        window.requestAnimationFrame(updateLax);
-      };
-    </script>
   </body>
 </html>

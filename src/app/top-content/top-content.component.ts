@@ -1,6 +1,17 @@
-import { Component, OnInit, ViewEncapsulation } from "@angular/core";
+import {
+  Component,
+  ElementRef,
+  OnInit,
+  ViewEncapsulation,
+  ViewChild
+} from "@angular/core";
 import { HostListener } from "@angular/core";
 import { Meta } from "@angular/platform-browser";
+import { Power1 } from "gsap/all";
+
+import * as $ from "jquery";
+
+declare var TweenMax: any;
 
 @Component({
   selector: "app-top-content",
@@ -9,6 +20,9 @@ import { Meta } from "@angular/platform-browser";
   encapsulation: ViewEncapsulation.None
 })
 export class TopContentComponent implements OnInit {
+  @ViewChild("topContent") topContent: ElementRef;
+  @ViewChild("content") content: ElementRef;
+
   screenWidth: boolean = true;
   @HostListener("window:resize", ["$event"])
   getScreenSize() {
@@ -52,6 +66,26 @@ export class TopContentComponent implements OnInit {
 
   ngOnInit() {
     this.screenWidth = window.innerWidth >= 1280;
-    this.type();
+    // this.type();
+    this.doAnimation();
+  }
+
+  doAnimation() {
+    TweenMax.from(this.topContent.nativeElement, 3, {
+      opacity: 0,
+      scale: 0,
+      ease: Power1.easeOut,
+      onComplete: this.activeTab()
+    });
+    TweenMax.fromTo(
+      this.content.nativeElement,
+      2.2,
+      { opacity: 0, y: -200 },
+      { opacity: 1, y: 0, ease: Power1.easeInOut }
+    );
+  }
+
+  activeTab() {
+    var doc = document.querySelector("#navbarNav");
   }
 }
